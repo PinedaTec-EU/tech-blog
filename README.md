@@ -1,23 +1,23 @@
 # Tech Blog
 
-Repositorio para publicar articulos tecnicos sobre herramientas de integracion,
-automatizacion y desarrollo, incluyendo Sphere Integration Hub.
+Repository for publishing technical articles about integration, automation, and
+software development tools, including Sphere Integration Hub.
 
-## Desarrollo local
+## Local Development
 
-MkDocs esta instalado en este equipo, pero el ejecutable quedo en:
+MkDocs is installed on this machine, but the executable is located at:
 
 ```sh
 /Users/jmr.pineda/Library/Python/3.9/bin/mkdocs
 ```
 
-Puedes ejecutarlo sin cambiar el `PATH` con:
+You can run it without changing `PATH` with:
 
 ```sh
 python3 -m mkdocs serve
 ```
 
-O anadir los scripts de Python de usuario a tu shell:
+Or add the user Python scripts directory to your shell:
 
 ```sh
 echo 'export PATH="$HOME/Library/Python/3.9/bin:$PATH"' >> ~/.zshrc
@@ -25,7 +25,7 @@ source ~/.zshrc
 mkdocs --version
 ```
 
-Comandos utiles:
+Useful commands:
 
 ```sh
 python3 -m mkdocs serve
@@ -34,12 +34,12 @@ python3 -m mkdocs build
 
 ## Deployment
 
-El sitio se publica en GitHub Pages mediante GitHub Actions.
+The site is published to GitHub Pages through GitHub Actions.
 
-El workflow esta en:
+The workflow is located at:
 
 ```sh
 .github/workflows/deploy-pages.yml
 ```
 
-Se ejecuta automaticamente al hacer push a `main` y tambien se puede lanzar manualmente desde la pestana Actions.
+It runs automatically on pushes to `main` and can also be triggered manually from the Actions tab.

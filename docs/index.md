@@ -1,5 +1,5 @@
 ---
-title: Inicio
+title: Home
 hide:
   - toc
 ---
@@ -11,11 +11,11 @@ hide:
 
 # Insights from the integration field.
 
-Articulos tecnicos sobre integracion, automatizacion, APIs y herramientas para construir sistemas reproducibles. Ahora empezamos con Sphere Integration Hub; la estructura queda lista para incorporar SpecForge.AI y nuevas series.
+Technical articles about integration, automation, APIs, and tools for building reproducible systems. The first series covers Sphere Integration Hub; the structure is ready for SpecForge.AI and future series.
 
 <nav class="hero-links" markdown>
-[Ver articulos :octicons-arrow-right-24:](#latest-articles)
-[Tematicas :octicons-beaker-24:](#series)
+[Read articles :octicons-arrow-right-24:](#latest-articles)
+[Topics :octicons-beaker-24:](#series)
 </nav>
 
 </div>
@@ -51,9 +51,9 @@ deterministic workflow
 
 ### [SphereIntegrationHub: A Deterministic API Workflow Engine](sphere-integration-hub/deterministic-api-workflow-engine.md)
 
-Como modelar workflows API reproducibles, validar contratos antes de ejecutar y generar trazas deterministas.
+How to model reproducible API workflows, validate contracts before execution, and generate deterministic traces.
 
-[Leer articulo :octicons-arrow-right-24:](sphere-integration-hub/deterministic-api-workflow-engine.md){ .insight-card__link }
+[Read article :octicons-arrow-right-24:](sphere-integration-hub/deterministic-api-workflow-engine.md){ .insight-card__link }
 </div>
 </article>
 
@@ -68,9 +68,9 @@ Como modelar workflows API reproducibles, validar contratos antes de ejecutar y 
 
 ### [The 3 AM Production Debugging Nightmare](sphere-integration-hub/3-am-production-debugging-nightmare.md)
 
-Una mirada practica a la diferencia entre logs dispersos y evidencia de ejecucion como artefacto inspeccionable.
+A practical look at the difference between scattered logs and execution evidence as an inspectable artifact.
 
-[Leer articulo :octicons-arrow-right-24:](sphere-integration-hub/3-am-production-debugging-nightmare.md){ .insight-card__link }
+[Read article :octicons-arrow-right-24:](sphere-integration-hub/3-am-production-debugging-nightmare.md){ .insight-card__link }
 </div>
 </article>
 
@@ -85,9 +85,9 @@ Una mirada practica a la diferencia entre logs dispersos y evidencia de ejecucio
 
 ### [LLM-Powered Test Data Generation: Stop Writing Scripts, Start Generating Reality](sphere-integration-hub/llm-powered-test-data-generation.md)
 
-Como usar etapas LLM dentro de workflows SIH para generar datos de prueba realistas, validados por schema y creados via API.
+How to use LLM stages inside SIH workflows to generate realistic test data, validate it with a schema, and create it through APIs.
 
-[Leer articulo :octicons-arrow-right-24:](sphere-integration-hub/llm-powered-test-data-generation.md){ .insight-card__link }
+[Read article :octicons-arrow-right-24:](sphere-integration-hub/llm-powered-test-data-generation.md){ .insight-card__link }
 </div>
 </article>
 
@@ -102,9 +102,9 @@ Como usar etapas LLM dentro de workflows SIH para generar datos de prueba realis
 
 ### Sphere Integration Hub
 
-Workflows API deterministas, trazas de ejecucion, CI/CD y automatizacion reproducible.
+Deterministic API workflows, execution traces, CI/CD, and reproducible automation.
 
-[Ver serie](sphere-integration-hub/deterministic-api-workflow-engine.md)
+[View series](sphere-integration-hub/deterministic-api-workflow-engine.md)
 </section>
 
 <section class="series-card" markdown>
@@ -112,7 +112,7 @@ Workflows API deterministas, trazas de ejecucion, CI/CD y automatizacion reprodu
 
 ### SpecForge.AI
 
-Articulos tecnicos sobre especificaciones, diseño asistido y flujos AI-first. Preparado para conectar con el repo dedicado.
+Technical articles about specifications, assisted design, and AI-first workflows. Ready to connect with the dedicated repository.
 </section>
 
 <section class="series-card" markdown>
@@ -120,7 +120,7 @@ Articulos tecnicos sobre especificaciones, diseño asistido y flujos AI-first. P
 
 ### Engineering Notes
 
-Arquitectura de integracion, automatizacion, desarrollo y operaciones.
+Integration architecture, automation, development, and operations.
 </section>
 
 </div>

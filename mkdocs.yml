@@ -1,5 +1,5 @@
 site_name: Tech Blog
-site_description: Articulos tecnicos sobre integracion, automatizacion y desarrollo.
+site_description: Technical articles about integration, automation, and software development.
 site_author: PinedaTec
 site_url: https://pinedatec-eu.github.io/tech-blog/
 repo_url: https://github.com/PinedaTec-EU/tech-blog
@@ -7,20 +7,20 @@ edit_uri: edit/main/docs/
 
 theme:
   name: material
-  language: es
+  language: en
   palette:
     - scheme: slate
       primary: black
       accent: cyan
       toggle:
         icon: material/weather-sunny
-        name: Cambiar a modo claro
+        name: Switch to light mode
     - scheme: default
       primary: black
       accent: teal
       toggle:
         icon: material/weather-night
-        name: Cambiar a modo oscuro
+        name: Switch to dark mode
   font:
     text: Inter
     code: JetBrains Mono
@@ -40,11 +40,11 @@ extra_css:
   - stylesheets/extra.css
 
 nav:
-  - Inicio: index.md
+  - Home: index.md
   - Sphere Integration Hub:
-      - Motor determinista de workflows API: sphere-integration-hub/deterministic-api-workflow-engine.md
-      - Debugging de produccion a las 3 AM: sphere-integration-hub/3-am-production-debugging-nightmare.md
-      - Generacion de test data con LLM: sphere-integration-hub/llm-powered-test-data-generation.md
+      - Deterministic API Workflow Engine: sphere-integration-hub/deterministic-api-workflow-engine.md
+      - The 3 AM Production Debugging Nightmare: sphere-integration-hub/3-am-production-debugging-nightmare.md
+      - LLM-Powered Test Data Generation: sphere-integration-hub/llm-powered-test-data-generation.md
 
 markdown_extensions:
   - admonition
