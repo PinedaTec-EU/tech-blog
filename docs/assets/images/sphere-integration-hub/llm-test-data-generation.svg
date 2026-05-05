@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 800" role="img" aria-labelledby="title desc">
+  <title id="title">LLM powered test data generation</title>
+  <desc id="desc">Technical illustration showing deterministic workflow stages generating realistic test data.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#08111f"/>
+      <stop offset="0.55" stop-color="#0f172a"/>
+      <stop offset="1" stop-color="#062b35"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset="1" stop-color="#4ade80"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="800" fill="url(#bg)"/>
+  <g opacity="0.16" stroke="#8bd7ff" stroke-width="1">
+    <path d="M110 126h1060M110 246h1060M110 366h1060M110 486h1060M110 606h1060"/>
+    <path d="M190 76v650M390 76v650M590 76v650M790 76v650M990 76v650"/>
+  </g>
+  <rect x="94" y="90" width="1092" height="620" rx="28" fill="#0b1222" opacity="0.78" stroke="#334155"/>
+  <text x="142" y="164" fill="#dbeafe" font-family="Inter, Arial, sans-serif" font-size="44" font-weight="700">LLM-powered test data</text>
+  <text x="142" y="210" fill="#94a3b8" font-family="Inter, Arial, sans-serif" font-size="24">Generate realistic profiles inline, validate schema, create via API.</text>
+  <g transform="translate(142 286)">
+    <rect width="252" height="230" rx="18" fill="#111827" stroke="#334155"/>
+    <text x="28" y="52" fill="#22d3ee" font-family="JetBrains Mono, monospace" font-size="22" font-weight="700">01 LLM</text>
+    <text x="28" y="96" fill="#dbeafe" font-family="JetBrains Mono, monospace" font-size="19">name: Sarah Chen</text>
+    <text x="28" y="132" fill="#dbeafe" font-family="JetBrains Mono, monospace" font-size="19">age: 32</text>
+    <text x="28" y="168" fill="#dbeafe" font-family="JetBrains Mono, monospace" font-size="19">interests:</text>
+    <text x="48" y="202" fill="#94a3b8" font-family="JetBrains Mono, monospace" font-size="17">yoga, travel, pottery</text>
+  </g>
+  <g transform="translate(510 286)">
+    <rect width="252" height="230" rx="18" fill="#111827" stroke="#334155"/>
+    <text x="28" y="52" fill="#4ade80" font-family="JetBrains Mono, monospace" font-size="22" font-weight="700">02 API</text>
+    <text x="28" y="96" fill="#dbeafe" font-family="JetBrains Mono, monospace" font-size="19">POST /users</text>
+    <text x="28" y="132" fill="#94a3b8" font-family="JetBrains Mono, monospace" font-size="17">ensure:</text>
+    <text x="48" y="166" fill="#dbeafe" font-family="JetBrains Mono, monospace" font-size="19">CreateIfMissing</text>
+    <text x="28" y="202" fill="#94a3b8" font-family="JetBrains Mono, monospace" font-size="17">schema-safe</text>
+  </g>
+  <g transform="translate(878 286)">
+    <rect width="252" height="230" rx="18" fill="#111827" stroke="#334155"/>
+    <text x="28" y="52" fill="#22d3ee" font-family="JetBrains Mono, monospace" font-size="22" font-weight="700">03 TRACE</text>
+    <text x="28" y="96" fill="#dbeafe" font-family="JetBrains Mono, monospace" font-size="19">1000 users</text>
+    <text x="28" y="132" fill="#dbeafe" font-family="JetBrains Mono, monospace" font-size="19">~5 minutes</text>
+    <text x="28" y="168" fill="#94a3b8" font-family="JetBrains Mono, monospace" font-size="17">report.json</text>
+    <text x="28" y="202" fill="#94a3b8" font-family="JetBrains Mono, monospace" font-size="17">report.html</text>
+  </g>
+  <path d="M416 401h70" stroke="url(#accent)" stroke-width="8" stroke-linecap="round"/>
+  <path d="M474 381l24 20-24 20" fill="none" stroke="url(#accent)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M784 401h70" stroke="url(#accent)" stroke-width="8" stroke-linecap="round"/>
+  <path d="M842 381l24 20-24 20" fill="none" stroke="url(#accent)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="142" y="596" width="988" height="54" rx="12" fill="#020617" stroke="#1e293b"/>
+  <text x="168" y="632" fill="#a7f3d0" font-family="JetBrains Mono, monospace" font-size="22">sih --workflow generate-user.workflow --env staging --input userCount=1000</text>
+</svg>
