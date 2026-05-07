@@ -1,3 +1,9 @@
+---
+title: LLM Model Evaluation as a Workflow
+description: Compare LLM and SLM candidates over the same prompts with quality, token, and duration evidence.
+image: assets/images/sphere-integration-hub/SIH.png
+---
+
 # LLM model evaluation as a workflow
 
 Choosing a small model is easy when the prompt is simple.

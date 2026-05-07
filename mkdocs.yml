@@ -1,12 +1,13 @@
 site_name: Tech Blog
 site_description: Technical articles about integration, automation, and software development.
 site_author: PinedaTec
-site_url: https://pinedatec-eu.github.io/tech-blog/
+site_url: https://tech-blog.pinedatec.eu/
 repo_url: https://github.com/PinedaTec-EU/tech-blog
 edit_uri: edit/main/docs/
 
 theme:
   name: material
+  custom_dir: overrides
   language: en
   palette:
     - scheme: slate
@@ -68,3 +69,6 @@ markdown_extensions:
 
 plugins:
   - search
+
+extra:
+  social_image: assets/images/sphere-integration-hub/SIH.png

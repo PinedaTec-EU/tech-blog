@@ -1,3 +1,9 @@
+---
+title: The 3 AM Production Debugging Nightmare
+description: Why reproducible workflow evidence matters when API failures reach production.
+image: assets/images/sphere-integration-hub/SIH.png
+---
+
 # The 3 AM Production Debugging Nightmare
 
 Deterministic execution reports for API workflows and production debugging.

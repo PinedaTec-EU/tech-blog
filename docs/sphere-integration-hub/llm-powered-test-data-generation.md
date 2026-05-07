@@ -1,3 +1,9 @@
+---
+title: LLM-Powered Test Data Generation
+description: How Sphere Integration Hub uses inline LLM stages to generate and validate realistic test data.
+image: assets/images/sphere-integration-hub/SIH.png
+---
+
 # LLM-Powered Test Data Generation: Stop Writing Scripts, Start Generating Reality
 
 Random test data is often technically valid and still useless for testing real features.

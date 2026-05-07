@@ -1,5 +1,7 @@
 ---
 title: Home
+description: Technical articles about integration, automation, APIs, and tools for building reproducible systems.
+image: assets/images/sphere-integration-hub/SIH.png
 hide:
   - toc
 ---

@@ -1,3 +1,9 @@
+---
+title: SphereIntegrationHub: A Deterministic API Workflow Engine
+description: How Sphere Integration Hub defines and executes API workflows deterministically.
+image: assets/images/sphere-integration-hub/SIH.png
+---
+
 # SphereIntegrationHub: A Deterministic API Workflow Engine
 
 A way to define and execute API workflows deterministically.
