@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">LLM model evaluation workflow</title>
+  <desc id="desc">A Sphere Integration Hub workflow compares two model candidates over the same prompt array, then judges quality, tokens, and duration.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#08111f"/>
+      <stop offset="1" stop-color="#152033"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#10213a"/>
+      <stop offset="1" stop-color="#0b1728"/>
+    </linearGradient>
+    <style>
+      .label{font:700 30px Inter,Arial,sans-serif;fill:#f8fafc}
+      .small{font:500 18px Inter,Arial,sans-serif;fill:#b6c2d1}
+      .mono{font:600 17px "JetBrains Mono",Consolas,monospace;fill:#d7e3f3}
+      .box{fill:url(#panel);stroke:#2b8a9f;stroke-width:2}
+      .metric{fill:#111c2f;stroke:#31445f;stroke-width:1.5}
+      .accent{fill:#23c4d8}
+      .green{fill:#8bd672}
+      .gold{fill:#f4c95d}
+      .line{stroke:#42c7d8;stroke-width:4;stroke-linecap:round;fill:none}
+    </style>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <text x="70" y="82" class="label">LLM evaluation as a workflow</text>
+  <text x="72" y="116" class="small">same prompts, two candidates, one judge, token evidence preserved</text>
+
+  <rect x="70" y="180" width="230" height="250" rx="8" class="box"/>
+  <text x="98" y="230" class="label">Prompts</text>
+  <text x="100" y="275" class="mono">[ refund-policy ]</text>
+  <text x="100" y="315" class="mono">[ incident-note ]</text>
+  <text x="100" y="355" class="mono">[ json-extract ]</text>
+
+  <path d="M310 260 C365 260 365 225 420 225" class="line"/>
+  <path d="M310 350 C365 350 365 385 420 385" class="line"/>
+
+  <rect x="420" y="145" width="270" height="165" rx="8" class="box"/>
+  <text x="452" y="198" class="label">Candidate A</text>
+  <text x="454" y="238" class="small">forEach over prompts</text>
+  <rect x="454" y="260" width="90" height="24" rx="4" class="metric"/>
+  <text x="465" y="278" class="mono">tokens</text>
+  <rect x="560" y="260" width="92" height="24" rx="4" class="metric"/>
+  <text x="575" y="278" class="mono">ms</text>
+
+  <rect x="420" y="335" width="270" height="165" rx="8" class="box"/>
+  <text x="452" y="388" class="label">Candidate B</text>
+  <text x="454" y="428" class="small">same input array</text>
+  <rect x="454" y="450" width="90" height="24" rx="4" class="metric"/>
+  <text x="465" y="468" class="mono">tokens</text>
+  <rect x="560" y="450" width="92" height="24" rx="4" class="metric"/>
+  <text x="575" y="468" class="mono">ms</text>
+
+  <path d="M700 225 C760 225 760 315 820 315" class="line"/>
+  <path d="M700 415 C760 415 760 315 820 315" class="line"/>
+
+  <rect x="820" y="190" width="300" height="250" rx="8" class="box"/>
+  <text x="856" y="246" class="label">Judge</text>
+  <text x="858" y="286" class="small">quality score per prompt</text>
+  <circle cx="875" cy="340" r="10" class="green"/>
+  <text x="900" y="346" class="mono">winner</text>
+  <circle cx="875" cy="382" r="10" class="gold"/>
+  <text x="900" y="388" class="mono">reason</text>
+  <circle cx="875" cy="424" r="10" class="accent"/>
+  <text x="900" y="430" class="mono">cost evidence</text>
+</svg>

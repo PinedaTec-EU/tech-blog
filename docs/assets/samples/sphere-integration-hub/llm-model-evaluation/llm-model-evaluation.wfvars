@@ -1,0 +1,3 @@
+local:
+  openaiApiKey: "replace-with-openai-api-key"
+  prompts: '[{"id":"refund-policy","text":"Summarize this refund policy in 5 bullets for a support agent: customers can request refunds within 30 days, subscriptions renew monthly, partial refunds require manager approval, and chargebacks lock the account until reviewed."},{"id":"incident-note","text":"Rewrite this incident note for an engineering handoff: checkout latency spiked after the 14:05 deploy, payment calls timed out, rollback started at 14:31, error rate returned to baseline at 14:39."},{"id":"json-extraction","text":"Extract customer intent, urgency, and next action as JSON from: I have been charged twice for invoice INV-2048 and need this fixed before finance closes the month."}]'

@@ -1,6 +1,9 @@
 # The 3 AM Production Debugging Nightmare
 
 Deterministic execution reports for API workflows and production debugging.
+
+Compatibility: Sphere Integration Hub `v1.7.20.278`, commit `c99028ab931c2b213573377382dc7855715af3ec`.
+
 ### The Pain: Distributed Debugging Without Correlation
 
 It's 3 AM. Your phone vibrates. PagerDuty alert: "Customer onboarding failed for account ACC-47291."

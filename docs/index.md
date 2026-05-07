@@ -62,36 +62,19 @@ I am a senior software architect focused on .NET, distributed systems, integrati
 <div class="insight-list" markdown>
 
 <article class="insight-card" markdown>
-<a class="insight-card__media" href="sphere-integration-hub/deterministic-api-workflow-engine/" markdown>
-![Deterministic workflow trace](assets/images/sphere-integration-hub/deterministic-workflow-trace.png)
+<a class="insight-card__media" href="sphere-integration-hub/llm-model-evaluation-as-a-workflow/" markdown>
+![LLM model evaluation workflow](assets/images/sphere-integration-hub/llm-model-evaluation.svg)
 </a>
 
 <div class="insight-card__body" markdown>
 <span class="article-card__tag">Sphere Integration Hub</span>
-<span class="insight-card__meta">Workflow engine · API determinism</span>
+<span class="insight-card__meta">Published May 7, 2026 · LLM stages · Model evaluation</span>
 
-### [SphereIntegrationHub: A Deterministic API Workflow Engine](sphere-integration-hub/deterministic-api-workflow-engine.md)
+### [LLM model evaluation as a workflow](sphere-integration-hub/llm-model-evaluation-as-a-workflow.md)
 
-How to model reproducible API workflows, validate contracts before execution, and generate deterministic traces.
+How to compare two LLM/SLM candidates over the same prompt array, judge answer quality, and keep token and duration evidence.
 
-[Read article :octicons-arrow-right-24:](sphere-integration-hub/deterministic-api-workflow-engine.md){ .insight-card__link }
-</div>
-</article>
-
-<article class="insight-card" markdown>
-<a class="insight-card__media" href="sphere-integration-hub/3-am-production-debugging-nightmare/" markdown>
-![Execution report stage details](assets/images/sphere-integration-hub/execution-report-stage-details.png)
-</a>
-
-<div class="insight-card__body" markdown>
-<span class="article-card__tag">Production Debugging</span>
-<span class="insight-card__meta">Execution evidence · Forensics</span>
-
-### [The 3 AM Production Debugging Nightmare](sphere-integration-hub/3-am-production-debugging-nightmare.md)
-
-A practical look at the difference between scattered logs and execution evidence as an inspectable artifact.
-
-[Read article :octicons-arrow-right-24:](sphere-integration-hub/3-am-production-debugging-nightmare.md){ .insight-card__link }
+[Read article :octicons-arrow-right-24:](sphere-integration-hub/llm-model-evaluation-as-a-workflow.md){ .insight-card__link }
 </div>
 </article>
 
@@ -102,13 +85,47 @@ A practical look at the difference between scattered logs and execution evidence
 
 <div class="insight-card__body" markdown>
 <span class="article-card__tag">Sphere Integration Hub</span>
-<span class="insight-card__meta">LLM stages · Test data generation</span>
+<span class="insight-card__meta">Published May 5, 2026 · LLM stages · Test data generation</span>
 
 ### [LLM-Powered Test Data Generation: Stop Writing Scripts, Start Generating Reality](sphere-integration-hub/llm-powered-test-data-generation.md)
 
 How to use LLM stages inside SIH workflows to generate realistic test data, validate it with a schema, and create it through APIs.
 
 [Read article :octicons-arrow-right-24:](sphere-integration-hub/llm-powered-test-data-generation.md){ .insight-card__link }
+</div>
+</article>
+
+<article class="insight-card" markdown>
+<a class="insight-card__media" href="sphere-integration-hub/3-am-production-debugging-nightmare/" markdown>
+![Execution report stage details](assets/images/sphere-integration-hub/execution-report-stage-details.png)
+</a>
+
+<div class="insight-card__body" markdown>
+<span class="article-card__tag">Production Debugging</span>
+<span class="insight-card__meta">Published May 5, 2026 · Execution evidence · Forensics</span>
+
+### [The 3 AM Production Debugging Nightmare](sphere-integration-hub/3-am-production-debugging-nightmare.md)
+
+A practical look at the difference between scattered logs and execution evidence as an inspectable artifact.
+
+[Read article :octicons-arrow-right-24:](sphere-integration-hub/3-am-production-debugging-nightmare.md){ .insight-card__link }
+</div>
+</article>
+
+<article class="insight-card" markdown>
+<a class="insight-card__media" href="sphere-integration-hub/deterministic-api-workflow-engine/" markdown>
+![Deterministic workflow trace](assets/images/sphere-integration-hub/deterministic-workflow-trace.png)
+</a>
+
+<div class="insight-card__body" markdown>
+<span class="article-card__tag">Sphere Integration Hub</span>
+<span class="insight-card__meta">Published May 5, 2026 · Workflow engine · API determinism</span>
+
+### [SphereIntegrationHub: A Deterministic API Workflow Engine](sphere-integration-hub/deterministic-api-workflow-engine.md)
+
+How to model reproducible API workflows, validate contracts before execution, and generate deterministic traces.
+
+[Read article :octicons-arrow-right-24:](sphere-integration-hub/deterministic-api-workflow-engine.md){ .insight-card__link }
 </div>
 </article>
 

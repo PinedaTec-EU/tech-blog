@@ -6,6 +6,8 @@ If a recommendation engine, a search feature, a moderation flow, or an analytics
 
 This article shows how Sphere Integration Hub can use an inline LLM stage to generate contextually realistic test data, validate it with a strict schema, and feed it directly into API workflows.
 
+Compatibility: Sphere Integration Hub `v1.7.20.278`, commit `c99028ab931c2b213573377382dc7855715af3ec`.
+
 ![LLM-powered test data generation](../assets/images/sphere-integration-hub/llm-test-data-generation.svg)
 
 ## The Pain

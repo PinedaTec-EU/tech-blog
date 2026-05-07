@@ -45,6 +45,7 @@ nav:
       - Deterministic API Workflow Engine: sphere-integration-hub/deterministic-api-workflow-engine.md
       - The 3 AM Production Debugging Nightmare: sphere-integration-hub/3-am-production-debugging-nightmare.md
       - LLM-Powered Test Data Generation: sphere-integration-hub/llm-powered-test-data-generation.md
+      - LLM Model Evaluation as a Workflow: sphere-integration-hub/llm-model-evaluation-as-a-workflow.md
 
 markdown_extensions:
   - admonition
