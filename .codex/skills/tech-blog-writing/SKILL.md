@@ -52,6 +52,12 @@ The blog voice is practical, direct, and technical. It starts from a real engine
 - Include one compact code excerpt in the article and link to the full sample.
 - End with a practical judgement, not a slogan.
 
+## Social post rules
+
+- LinkedIn posts for blog articles must include at least 3 focused hashtags.
+- One LinkedIn hashtag must always be `#PinedaTecEU`.
+- Use tags that describe the concrete engineering topic, not broad hype.
+
 ## Index card rules
 
 - In the `Sphere Integration Hub Saga` block in `docs/index.md`, list articles newest first.
