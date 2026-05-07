@@ -39,6 +39,13 @@ The blog voice is practical, direct, and technical. It starts from a real engine
 
 ## Article shape
 
+- Add front matter to every public page and article with:
+  - `title`: the social/link-preview title
+  - `description`: a compact summary for search and social previews
+  - `image`: the social preview image path, relative to `docs/`
+- For Sphere Integration Hub articles, use `image: assets/images/sphere-integration-hub/SIH.png` unless the user explicitly asks for a different preview image.
+- Keep social preview images in `docs/assets/images/<series>/` so MkDocs publishes them as stable absolute URLs.
+- The MkDocs template emits Open Graph and Twitter card tags from this front matter. Verify generated HTML includes `og:image` before publishing articles meant to be shared on LinkedIn.
 - Title as a concrete technical claim.
 - First section: the pain.
 - Middle sections: how teams usually handle it, where that fails, what SIH does.
