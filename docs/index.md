@@ -36,6 +36,27 @@ deterministic workflow
 </div>
 </section>
 
+## About me { #about-me }
+
+<section class="about-author" markdown>
+<div class="about-author__media" markdown>
+![Jose Manuel Rodriguez Pineda](assets/images/about/jose-manuel-rodriguez-pineda.jpg)
+</div>
+
+<div class="about-author__content" markdown>
+<span class="tech-kicker">Author</span>
+
+### Jose Manuel Rodriguez Pineda
+
+I am a senior software architect focused on .NET, distributed systems, integration, and AI Engineering under operational control. This blog collects field notes from that work: reproducible automation, API-first workflows, execution evidence, and AI patterns that can survive real production constraints.
+
+<nav class="about-author__links" markdown>
+[LinkedIn profile :fontawesome-brands-linkedin:](https://www.linkedin.com/in/jmrpineda){ target="_blank" rel="noopener" }
+[PinedaTec.eu :octicons-arrow-up-right-24:](https://www.pinedatec.eu){ target="_blank" rel="noopener" }
+</nav>
+</div>
+</section>
+
 ## Sphere Integration Hub Saga { #latest-articles }
 
 <div class="insight-list" markdown>

@@ -155,6 +155,80 @@
   margin: 0;
 }
 
+.about-author {
+  align-items: center;
+  background: color-mix(in srgb, var(--pt-panel) 88%, transparent);
+  border: 1px solid var(--pt-border);
+  border-radius: 8px;
+  display: grid;
+  gap: 1.2rem;
+  grid-template-columns: minmax(13rem, 0.36fr) minmax(0, 0.64fr);
+  margin: 1rem 0 2.5rem;
+  overflow: hidden;
+}
+
+.about-author__media {
+  align-self: stretch;
+  background: rgba(15, 23, 42, 0.8);
+  border-right: 1px solid var(--pt-border);
+  min-height: 17rem;
+}
+
+.about-author__media img {
+  display: block;
+  height: 100%;
+  margin: 0;
+  object-fit: cover;
+  object-position: 44% 44%;
+  width: 100%;
+}
+
+.about-author__content {
+  padding: 1.2rem 1.2rem 1.2rem 0;
+}
+
+.about-author h3 {
+  font-size: 1.45rem;
+  line-height: 1.2;
+  margin: 0.45rem 0 0.7rem;
+}
+
+.about-author p {
+  color: var(--md-default-fg-color--light);
+  margin-bottom: 0;
+}
+
+.about-author__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-top: 1rem;
+}
+
+.about-author__links a {
+  align-items: center;
+  border: 1px solid var(--pt-border);
+  border-radius: 999px;
+  color: var(--md-default-fg-color);
+  display: inline-flex;
+  font-size: 0.82rem;
+  font-weight: 700;
+  gap: 0.35rem;
+  line-height: 1;
+  padding: 0.52rem 0.78rem;
+  text-decoration: none;
+}
+
+.about-author__links a:first-child {
+  border-color: color-mix(in srgb, var(--pt-accent) 50%, var(--pt-border));
+  color: var(--pt-accent);
+}
+
+.about-author__links a:hover {
+  background: color-mix(in srgb, var(--pt-accent) 12%, var(--pt-panel));
+  color: var(--pt-accent);
+}
+
 .article-grid {
   display: grid;
   gap: 1rem;
@@ -270,6 +344,7 @@
 @media screen and (max-width: 760px) {
   .tech-hero,
   .article-grid,
+  .about-author,
   .insight-card,
   .series-grid {
     grid-template-columns: 1fr;
@@ -282,6 +357,16 @@
   .insight-card__media {
     border-right: 0;
     border-bottom: 1px solid var(--pt-border);
+  }
+
+  .about-author__media {
+    border-right: 0;
+    border-bottom: 1px solid var(--pt-border);
+    min-height: 14rem;
+  }
+
+  .about-author__content {
+    padding: 0 1rem 1rem;
   }
 
   .insight-card__body {
