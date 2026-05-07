@@ -37,7 +37,7 @@ theme:
     - toc.follow
 
 extra_css:
-  - stylesheets/extra.css
+  - stylesheets/extra-20260507.css
 
 nav:
   - Home: index.md
