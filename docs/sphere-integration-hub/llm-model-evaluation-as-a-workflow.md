@@ -22,7 +22,7 @@ You need to know:
 
 That is a workflow problem.
 
-Compatibility: Sphere Integration Hub `v1.7.20.278`, commit `c99028ab931c2b213573377382dc7855715af3ec`. Sample validation: `--dry-run` and `--mocked` passed against that version.
+Compatibility: Sphere Integration Hub `v1.7.20.278`. Sample validation: `--dry-run` and `--mocked` passed against that version.
 
 ![LLM model evaluation workflow](../assets/images/sphere-integration-hub/llm-model-evaluation.svg)
 
@@ -60,6 +60,10 @@ SIH gives that convention a concrete place to live: the workflow file, the `.wfv
 ## What SIH can measure
 
 The OpenAI stage in SIH normalizes the provider response into workflow output.
+
+The workflow does not have to call a provider directly. It can also call a model gateway, proxy, or wrapper such as a LiteLLM-style endpoint, as long as the connection exposes the API shape expected by the stage and returns the usage metadata the evaluation needs.
+
+That is useful when the company already routes model traffic through an internal gateway for keys, quotas, model aliases, audit logs, or provider switching.
 
 For each LLM call, you can capture:
 
