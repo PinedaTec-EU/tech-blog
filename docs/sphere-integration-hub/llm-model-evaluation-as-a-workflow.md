@@ -1,14 +1,14 @@
 ---
 title: LLM Model Evaluation as a Workflow
-description: Compare LLM and SLM candidates over the same prompts with quality, token, and duration evidence.
+description: Evaluate LLM and SLM candidates for an enterprise use case without manual scoring scripts.
 image: assets/images/sphere-integration-hub/SIH.png
 ---
 
 # LLM model evaluation as a workflow
 
-Choosing a small model is easy when the prompt is simple.
+Choosing a small model is easy when the task is simple.
 
-It gets harder when the prompt set looks like your real work: policy summaries, incident handoffs, JSON extraction, support replies, classification tasks, and all the strange phrasing users send at 17:58 on a Friday.
+It gets harder when a team has to decide which LLM or SLM should handle a real enterprise workflow: policy summaries, incident handoffs, JSON extraction, support replies, classification tasks, and all the strange phrasing users send at 17:58 on a Friday.
 
 A single benchmark score does not tell you enough.
 
@@ -18,7 +18,7 @@ You need to know:
 - how many tokens it spent
 - how long each call took
 - whether the answer shape is safe enough to feed into the next step
-- whether the test can run again next week without becoming a spreadsheet exercise
+- whether the same evaluation can run again next week without becoming a manual scoring and scripting exercise
 
 That is a workflow problem.
 
@@ -28,23 +28,34 @@ Compatibility: Sphere Integration Hub `v1.7.20.278`, commit `c99028ab931c2b21357
 
 ## The pain
 
-A lot of model selection still happens like this:
+A lot of model selection in companies still becomes a one-off evaluation project:
 
-1. paste 3 prompts into a chat UI
-2. compare the answers manually
-3. check pricing in another tab
-4. forget to save the exact prompt
-5. repeat the same test a month later with slightly different inputs
+1. collect a prompt set from the target use case
+2. write scripts to call each candidate model through its API
+3. normalize different provider responses
+4. score the answers by hand or with another ad hoc script
+5. calculate token usage, latency, and cost in a spreadsheet
+6. repeat the same test later with slightly different inputs and missing context
 
-That process feels fast, until a team starts making decisions from it.
+That process looks manageable for a small proof of concept. It breaks down when the decision affects a product, a support operation, a compliance workflow, or an internal automation platform.
 
-For production work, "which answer do I like?" is too small a question.
+For production work, "which model looked best in a quick test?" is too small a question.
 
 The better question is:
 
 > Which model gives good enough answers for this task, at the cost and latency we can accept?
 
-That needs evidence.
+That needs repeatable API execution and evidence.
+
+## The evaluation convention
+
+Treat the evaluation as a versioned API workflow.
+
+Use the same prompt array for every candidate. Keep stable prompt IDs. Require the same output schema from each model. Capture token and duration metadata for every call. Run the judge over the full result arrays, using a fixed rubric.
+
+This convention matters because model evaluation becomes comparable only when the inputs, output shape, scoring rules, and execution evidence stay stable.
+
+SIH gives that convention a concrete place to live: the workflow file, the `.wfvars` file, the catalog, and the execution report.
 
 ## What SIH can measure
 

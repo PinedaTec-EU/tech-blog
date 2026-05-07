@@ -74,7 +74,7 @@ I am a senior software architect focused on .NET, distributed systems, integrati
 
 ### [LLM model evaluation as a workflow](sphere-integration-hub/llm-model-evaluation-as-a-workflow.md)
 
-How to compare two LLM/SLM candidates over the same prompt array, judge answer quality, and keep token and duration evidence.
+How to evaluate LLM/SLM candidates for an enterprise use case without manual scoring scripts.
 
 [Read article :octicons-arrow-right-24:](sphere-integration-hub/llm-model-evaluation-as-a-workflow.md){ .insight-card__link }
 </div>
