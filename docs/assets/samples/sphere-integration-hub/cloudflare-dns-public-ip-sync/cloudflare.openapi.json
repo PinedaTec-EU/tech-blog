@@ -41,7 +41,9 @@
                   "type": {
                     "type": "string",
                     "enum": [
-                      "A"
+                      "A",
+                      "CNAME",
+                      "TXT"
                     ]
                   },
                   "name": {

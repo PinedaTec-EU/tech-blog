@@ -72,9 +72,9 @@ I am a senior software architect focused on .NET, distributed systems, integrati
 <span class="article-card__tag">Sphere Integration Hub</span>
 <span class="insight-card__meta">Published May 8, 2026 · DNS automation · Cloudflare</span>
 
-### [Keep Cloudflare A records synced from a workflow](sphere-integration-hub/cloudflare-dns-public-ip-sync.md)
+### [Keep Cloudflare DNS records synced from a workflow](sphere-integration-hub/cloudflare-dns-public-ip-sync.md)
 
-How to discover the public IP visible from infrastructure and update Cloudflare DNS A records from a JSON list.
+How to discover the public IP visible from infrastructure and update Cloudflare DNS records from a JSON inventory.
 
 [Read article :octicons-arrow-right-24:](sphere-integration-hub/cloudflare-dns-public-ip-sync.md){ .insight-card__link }
 </div>

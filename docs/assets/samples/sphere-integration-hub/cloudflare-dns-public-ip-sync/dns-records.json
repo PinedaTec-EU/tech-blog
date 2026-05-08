@@ -1,5 +1,5 @@
 {
-  "records": [
+  "aRecords": [
     {
       "zoneId": "023e105f4ecef8ad9ca31a8372d0c353",
       "recordId": "372e67954025e0ba6aaa6d586b9e0b59",
@@ -12,6 +12,26 @@
       "recordId": "f9e1c7a6c4b24c0ba0ef6b03f8b9f125",
       "name": "api.example.com",
       "ttl": 120,
+      "proxied": false
+    }
+  ],
+  "staticRecords": [
+    {
+      "zoneId": "023e105f4ecef8ad9ca31a8372d0c353",
+      "recordId": "a2f7c3d1e9b84f0abf9d812345678901",
+      "type": "CNAME",
+      "name": "www.example.com",
+      "content": "app.example.com",
+      "ttl": 120,
+      "proxied": true
+    },
+    {
+      "zoneId": "023e105f4ecef8ad9ca31a8372d0c353",
+      "recordId": "b3e8d4c2f0a95a1bc0ae923456789012",
+      "type": "TXT",
+      "name": "_verification.example.com",
+      "content": "sih-verification=example-token",
+      "ttl": 300,
       "proxied": false
     }
   ]

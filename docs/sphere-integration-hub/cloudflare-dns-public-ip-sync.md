@@ -1,10 +1,10 @@
 ---
-title: Keep Cloudflare A Records Synced from a Workflow
-description: Use Sphere Integration Hub to discover the public IP visible from infrastructure and update Cloudflare DNS A records from a JSON list.
+title: Keep Cloudflare DNS Records Synced from a Workflow
+description: Use Sphere Integration Hub to discover the public IP visible from infrastructure and update Cloudflare DNS records from a JSON inventory.
 image: assets/images/sphere-integration-hub/cloudflare-dns-public-ip-sync.png
 ---
 
-# Keep Cloudflare A records synced from a workflow
+# Keep Cloudflare DNS records synced from a workflow
 
 Dynamic public IPs are still a production problem in small infrastructure, lab environments, self-hosted services, VPN entry points, edge boxes, and recovery environments.
 
@@ -35,6 +35,8 @@ Keep the desired DNS targets in JSON and make the sync deterministic.
 
 Each item contains the Cloudflare zone ID, DNS record ID, hostname, TTL, and proxy mode. The workflow discovers the public IP address from inside the infrastructure, then patches each configured A record to that address.
 
+The same inventory can also carry static DNS records. In the sample, `CNAME` and `TXT` records use the `content` value stored in JSON.
+
 The JSON stays versioned as a separate inventory file. The API token stays secret in the workflow variables. The execution report keeps the discovered IP, the updated record names, and the provider responses.
 
 ## The runnable sample
@@ -63,13 +65,33 @@ The DNS inventory lives in `dns-records.json`:
 
 ```json
 {
-  "records": [
+  "aRecords": [
     {
       "zoneId": "023e105f4ecef8ad9ca31a8372d0c353",
       "recordId": "372e67954025e0ba6aaa6d586b9e0b59",
       "name": "app.example.com",
       "ttl": 120,
       "proxied": true
+    }
+  ],
+  "staticRecords": [
+    {
+      "zoneId": "023e105f4ecef8ad9ca31a8372d0c353",
+      "recordId": "a2f7c3d1e9b84f0abf9d812345678901",
+      "type": "CNAME",
+      "name": "www.example.com",
+      "content": "app.example.com",
+      "ttl": 120,
+      "proxied": true
+    },
+    {
+      "zoneId": "023e105f4ecef8ad9ca31a8372d0c353",
+      "recordId": "b3e8d4c2f0a95a1bc0ae923456789012",
+      "type": "TXT",
+      "name": "_verification.example.com",
+      "content": "sih-verification=example-token",
+      "ttl": 300,
+      "proxied": false
     }
   ]
 }
@@ -92,9 +114,9 @@ That stage matters because the source of truth is the infrastructure path, not a
 
 ![DNS update workflow: public IP discovery, JSON inventory loop, and Cloudflare DNS PATCH](../assets/images/sphere-integration-hub/cloudflare-dns-public-ip-sync-flow.png)
 
-## Updating Cloudflare
+## Updating Cloudflare A records
 
-The second stage loads the external JSON file, loops over `records`, and patches each Cloudflare DNS record:
+The second stage loads the external JSON file, loops over `aRecords`, and patches each Cloudflare DNS A record with the discovered public IP:
 
 ```yaml
 - name: "update-cloudflare-a-records"
@@ -104,7 +126,7 @@ The second stage loads the external JSON file, loops over `records`, and patches
   httpVerb: "PATCH"
   expectedStatus: 200
   dataFile: "./dns-records.json"
-  forEach: "records"
+  forEach: "aRecords"
   itemName: "record"
   headers:
     Content-Type: "application/json"
@@ -117,6 +139,32 @@ The second stage loads the external JSON file, loops over `records`, and patches
       "ttl": {{context:record.ttl}},
       "proxied": {{context:record.proxied}},
       "comment": "Updated by Sphere Integration Hub public IP sync"
+    }
+```
+
+Static records use the same Cloudflare endpoint, but their `content` comes from the JSON inventory:
+
+```yaml
+- name: "update-cloudflare-static-records"
+  kind: "Endpoint"
+  apiRef: "cloudflare"
+  endpoint: "/client/v4/zones/{{context:record.zoneId}}/dns_records/{{context:record.recordId}}"
+  httpVerb: "PATCH"
+  expectedStatus: 200
+  dataFile: "./dns-records.json"
+  forEach: "staticRecords"
+  itemName: "record"
+  headers:
+    Content-Type: "application/json"
+    Authorization: "Bearer {{input.cloudflareApiToken}}"
+  body: |
+    {
+      "type": "{{context:record.type}}",
+      "name": "{{context:record.name}}",
+      "content": "{{context:record.content}}",
+      "ttl": {{context:record.ttl}},
+      "proxied": {{context:record.proxied}},
+      "comment": "Updated by Sphere Integration Hub DNS sync"
     }
 ```
 
