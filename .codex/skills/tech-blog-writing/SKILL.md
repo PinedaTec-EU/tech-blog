@@ -42,10 +42,12 @@ The blog voice is practical, direct, and technical. It starts from a real engine
 - Add front matter to every public page and article with:
   - `title`: the social/link-preview title
   - `description`: a compact summary for search and social previews
-  - `image`: the social preview image path, relative to `docs/`
-- For Sphere Integration Hub articles, use `image: assets/images/sphere-integration-hub/SIH.png` unless the user explicitly asks for a different preview image.
+  - `image`: the conceptual article header image path, relative to `docs/`. This image is also used for Open Graph and Twitter/X link previews.
+- Every article should have a conceptual header image that adds meaning to the article. Put it near the top of the article, after the compatibility marker when present and before the first major section.
+- Prefer a specific image per article over the generic series image. Use the generic series image only as a temporary fallback.
+- For Sphere Integration Hub articles, keep article images in `docs/assets/images/sphere-integration-hub/` and use a stable slug filename, for example `article-slug.png`.
 - Keep social preview images in `docs/assets/images/<series>/` so MkDocs publishes them as stable absolute URLs.
-- The MkDocs template emits Open Graph and Twitter card tags from this front matter. Verify generated HTML includes `og:image` before publishing articles meant to be shared on LinkedIn.
+- The MkDocs template emits Open Graph and Twitter card tags from this front matter. Verify generated HTML includes the article-specific `og:image` before publishing articles meant to be shared on LinkedIn.
 - Title as a concrete technical claim.
 - First section: the pain.
 - Middle sections: how teams usually handle it, where that fails, what SIH does.

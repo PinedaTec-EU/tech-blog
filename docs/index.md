@@ -65,7 +65,7 @@ I am a senior software architect focused on .NET, distributed systems, integrati
 
 <article class="insight-card" markdown>
 <a class="insight-card__media" href="sphere-integration-hub/cloudflare-dns-public-ip-sync/" markdown>
-![Sphere Integration Hub](assets/images/sphere-integration-hub/SIH.png)
+![Public IP discovery and Cloudflare DNS sync workflow](assets/images/sphere-integration-hub/cloudflare-dns-public-ip-sync.png)
 </a>
 
 <div class="insight-card__body" markdown>

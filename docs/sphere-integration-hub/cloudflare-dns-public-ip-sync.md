@@ -1,7 +1,7 @@
 ---
 title: Keep Cloudflare A Records Synced from a Workflow
 description: Use Sphere Integration Hub to discover the public IP visible from infrastructure and update Cloudflare DNS A records from a JSON list.
-image: assets/images/sphere-integration-hub/SIH.png
+image: assets/images/sphere-integration-hub/cloudflare-dns-public-ip-sync.png
 ---
 
 # Keep Cloudflare A records synced from a workflow
@@ -11,6 +11,8 @@ Dynamic public IPs are still a production problem in small infrastructure, lab e
 The host works. The service is healthy. Then the public IP changes and the DNS record keeps pointing to yesterday.
 
 Compatibility: Sphere Integration Hub `v1.7.20.278`. Sample validation: `--dry-run` and `--mocked` passed against that version.
+
+![Public IP discovery and Cloudflare DNS sync workflow](../assets/images/sphere-integration-hub/cloudflare-dns-public-ip-sync.png)
 
 ## The pain
 
