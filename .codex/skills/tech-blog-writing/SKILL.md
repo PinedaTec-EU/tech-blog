@@ -25,9 +25,9 @@ The blog voice is practical, direct, and technical. It starts from a real engine
 
 ## SIH article rules
 
-- Anchor every SIH-specific article to an exact SIH version and, when available, the commit hash used for validation.
+- Anchor every SIH-specific article to an exact SIH version only. Do not include the commit hash in the public compatibility marker.
 - Add the compatibility marker near the top of the article, before the first image or first major section:
-  `Compatibility: Sphere Integration Hub `vX.Y.Z.BUILD`, commit `abcdef...`.`
+  `Compatibility: Sphere Integration Hub `vX.Y.Z.BUILD`.`
 - If the article has a runnable sample, add the validation state in the same paragraph:
   `Sample validation: `--dry-run` and `--mocked` passed against that version.`
 - If the article is conceptual and has no runnable sample, keep the compatibility marker but do not claim workflow validation.

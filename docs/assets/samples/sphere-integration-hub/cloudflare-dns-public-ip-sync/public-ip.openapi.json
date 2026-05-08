@@ -1,0 +1,27 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Public IP Discovery",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/automation/n09230945.asp": {
+      "get": {
+        "operationId": "discoverPublicIp",
+        "responses": {
+          "200": {
+            "description": "Public IPv4 address as plain text.",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string",
+                  "example": "203.0.113.42"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

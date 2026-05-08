@@ -1,0 +1,19 @@
+- version: 3.11
+  plugins:
+    - id: http
+      contractVersion: "1.0"
+      runtimeVersion: "1.0"
+  definitions:
+    - name: public-ip
+      contractType: openapi
+      openApiUrl: file:///Users/jmr.pineda/Projects/GitHub/PinedaTec.eu/tech-blog/docs/assets/samples/sphere-integration-hub/cloudflare-dns-public-ip-sync/public-ip.openapi.json
+      basePath: /
+      baseUrl:
+        local: https://whatismyip.com
+    - name: cloudflare
+      contractType: openapi
+      openApiUrl: file:///Users/jmr.pineda/Projects/GitHub/PinedaTec.eu/tech-blog/docs/assets/samples/sphere-integration-hub/cloudflare-dns-public-ip-sync/cloudflare.openapi.json
+      basePath: /
+      baseUrl:
+        local: https://api.cloudflare.com
+  connections: []
