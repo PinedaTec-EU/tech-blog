@@ -90,6 +90,8 @@ The workflow starts by asking `whatismyip.com` for the public IP as seen from th
 
 That stage matters because the source of truth is the infrastructure path, not a developer laptop or a control-plane assumption.
 
+![DNS update workflow: public IP discovery, JSON inventory loop, and Cloudflare DNS PATCH](../assets/images/sphere-integration-hub/cloudflare-dns-public-ip-sync-flow.png)
+
 ## Updating Cloudflare
 
 The second stage loads the external JSON file, loops over `records`, and patches each Cloudflare DNS record:
