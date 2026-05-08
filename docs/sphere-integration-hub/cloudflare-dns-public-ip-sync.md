@@ -130,6 +130,20 @@ SIH gives the automation a contract boundary, typed inputs, secret masking, mock
 
 The same workflow can run manually, from CI, or from a scheduled job. The operational shape stays the same.
 
+## Automation options
+
+This workflow becomes useful when something runs it on a schedule or after an infrastructure event.
+
+Minimal deployment options:
+
+1. Codex App automation that runs the SIH command against the repo workspace and reports the execution result.
+2. Kubernetes CronJob that mounts the workflow files and the Cloudflare token secret, then runs SIH from a container.
+3. Docker container scheduled by the host with cron or systemd timer, using a mounted `dns-records.json`.
+4. GitHub Actions scheduled workflow for infrastructure that can safely reach the same outbound network path.
+5. Self-hosted runner job in the target network, when the public IP must be discovered from that exact location.
+
+The important rule is simple: run the workflow from the network whose public IP you want DNS to represent.
+
 ## Practical judgement
 
 For one hostname on one machine, a shell script may be enough.
