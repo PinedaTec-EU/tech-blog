@@ -3,6 +3,11 @@
 Repository for publishing technical articles about integration, automation, and
 software development tools, including Sphere Integration Hub.
 
+## Content Conventions
+
+Public articles must be written in English, including titles, descriptions,
+navigation labels, article cards, and social preview metadata.
+
 ## Local Development
 
 MkDocs is installed on this machine, but the executable is located at:

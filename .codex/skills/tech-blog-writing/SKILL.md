@@ -13,7 +13,7 @@ The blog voice is practical, direct, and technical. It starts from a real engine
 
 ## Voice
 
-- Write in English unless the user asks otherwise.
+- Write public articles in English. The conversation language does not change the article language. Keep titles, descriptions, navigation labels, article cards, and social preview metadata in English.
 - Open with the operational problem. No warm-up paragraph.
 - Keep paragraphs short, usually 1 or 2 sentences.
 - Use concrete examples, file names, command lines, version numbers, and outputs.
