@@ -207,7 +207,7 @@ the agent should operate inside that boundary
 
 Future articles will go deeper into the workflow model, the specification baseline, MCP integration, audit trails, regression, provider routing, and how SpecForge Central will work across repositories.
 
-This first article is only the starting point.
+This article is only the starting point for the governance problem.
 
 AI-assisted development is moving from impressive demos to daily engineering practice.
 
