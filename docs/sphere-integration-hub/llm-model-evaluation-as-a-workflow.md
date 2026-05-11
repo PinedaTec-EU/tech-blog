@@ -22,7 +22,7 @@ You need to know:
 
 That is a workflow problem.
 
-Compatibility: Sphere Integration Hub `v1.7.20.278`. Sample validation: `--dry-run` and `--mocked` passed against that version.
+Compatibility: Sphere Integration Hub `v1.7.20`. Sample validation: `--dry-run` and `--mocked` passed against that version.
 
 ![LLM model evaluation workflow](../assets/images/sphere-integration-hub/llm-model-evaluation.svg)
 
