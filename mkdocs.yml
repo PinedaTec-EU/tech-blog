@@ -42,6 +42,9 @@ extra_css:
 
 nav:
   - Home: index.md
+  - SpecForge.AI:
+      - Spec-Driven Development needs seven layers of control: specforge-ai/seven-layers-of-spec-driven-development.md
+      - AI-assisted development has a governance problem: specforge-ai/governed-ai-assisted-development.md
   - Sphere Integration Hub:
       - Deterministic API Workflow Engine: sphere-integration-hub/deterministic-api-workflow-engine.md
       - The 3 AM Production Debugging Nightmare: sphere-integration-hub/3-am-production-debugging-nightmare.md

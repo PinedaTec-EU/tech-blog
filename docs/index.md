@@ -1,7 +1,7 @@
 ---
 title: Home
-description: Technical articles about integration, automation, APIs, and tools for building reproducible systems.
-image: assets/images/sphere-integration-hub/SIH.png
+description: Technical articles about integration, automation, APIs, AI-assisted development, and tools for building reproducible systems.
+image: assets/images/specforge-ai/sdd-seven-layers.png
 hide:
   - toc
 ---
@@ -13,7 +13,7 @@ hide:
 
 # Insights from the integration field.
 
-Technical articles about integration, automation, APIs, and tools for building reproducible systems. The first series covers Sphere Integration Hub; the structure is ready for SpecForge.AI and future series.
+Technical articles about integration, automation, APIs, AI-assisted development, and tools for building reproducible systems.
 
 <nav class="hero-links" markdown>
 [Read articles :octicons-arrow-right-24:](#latest-articles)
@@ -26,13 +26,12 @@ Technical articles about integration, automation, APIs, and tools for building r
 
 <span class="series-label">Current series</span>
 
-## Sphere Integration Hub
+## SpecForge.AI
 
 ```text
-deterministic workflow
-  validate contract
-  create state via API
-  emit execution evidence
+spec as source of truth
+  govern agent workflow
+  preserve audit evidence
 ```
 
 </div>
@@ -59,7 +58,47 @@ I am a senior software architect focused on .NET, distributed systems, integrati
 </div>
 </section>
 
-## Sphere Integration Hub Saga { #latest-articles }
+## SpecForge.AI Saga { #latest-articles }
+
+<div class="insight-list" markdown>
+
+<article class="insight-card" markdown>
+<a class="insight-card__media" href="specforge-ai/seven-layers-of-spec-driven-development/" markdown>
+![The seven layers of Spec-Driven Development](assets/images/specforge-ai/sdd-seven-layers.png)
+</a>
+
+<div class="insight-card__body" markdown>
+<span class="article-card__tag">SpecForge.AI</span>
+<span class="insight-card__meta">Published May 11, 2026 · SDD · Delivery control</span>
+
+### [Spec-Driven Development needs seven layers of control](specforge-ai/seven-layers-of-spec-driven-development.md)
+
+A technical model for turning intent into governed, auditable AI-assisted delivery through specs, workflows, artifacts, evidence, agents, audit, and regression.
+
+[Read article :octicons-arrow-right-24:](specforge-ai/seven-layers-of-spec-driven-development.md){ .insight-card__link }
+</div>
+</article>
+
+<article class="insight-card" markdown>
+<a class="insight-card__media" href="specforge-ai/governed-ai-assisted-development/" markdown>
+![AI-assisted development governance gap](assets/images/specforge-ai/ai-governance-gap.png)
+</a>
+
+<div class="insight-card__body" markdown>
+<span class="article-card__tag">SpecForge.AI</span>
+<span class="insight-card__meta">Published May 11, 2026 · SDD · AI governance</span>
+
+### [AI-assisted development has a governance problem](specforge-ai/governed-ai-assisted-development.md)
+
+AI coding agents are fast, but teams still need specifications, traceability, review evidence, and a source of truth that survives the chat.
+
+[Read article :octicons-arrow-right-24:](specforge-ai/governed-ai-assisted-development.md){ .insight-card__link }
+</div>
+</article>
+
+</div>
+
+## Sphere Integration Hub Saga
 
 <div class="insight-list" markdown>
 
@@ -165,11 +204,13 @@ Deterministic API workflows, execution traces, CI/CD, and reproducible automatio
 </section>
 
 <section class="series-card" markdown>
-<span class="series-label">Next</span>
+<span class="series-label">Active</span>
 
 ### SpecForge.AI
 
-Technical articles about specifications, assisted design, and AI-first workflows. Ready to connect with the dedicated repository.
+Specifications, assisted design, MCP-backed workflows, governance, traceability, and AI-assisted delivery under operational control.
+
+[View series](specforge-ai/seven-layers-of-spec-driven-development.md)
 </section>
 
 <section class="series-card" markdown>
