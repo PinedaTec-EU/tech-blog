@@ -11,13 +11,13 @@ hide:
 
 <span class="tech-kicker">Technical articles</span>
 
-# Insights from the integration field.
+# Reproducible workflows for real integration problems.
 
-Technical articles about integration, automation, APIs, AI-assisted development, and tools for building reproducible systems.
+Field notes on API workflows, execution evidence, deterministic automation, and AI-assisted engineering that can survive production constraints.
 
 <nav class="hero-links" markdown>
-[Read articles :octicons-arrow-right-24:](#latest-articles)
-[Topics :octicons-beaker-24:](#series)
+[Start with Sphere Integration Hub :octicons-arrow-right-24:](sphere-integration-hub/3-am-production-debugging-nightmare.md)
+[Browse series :octicons-beaker-24:](#series)
 </nav>
 
 </div>
@@ -26,79 +26,29 @@ Technical articles about integration, automation, APIs, AI-assisted development,
 
 <span class="series-label">Current series</span>
 
-## SpecForge.AI
+## Sphere Integration Hub
 
 ```text
-spec as source of truth
-  govern agent workflow
-  preserve audit evidence
+replay multi-API workflows
+  validate contracts before execution
+  keep execution evidence
 ```
 
 </div>
 </section>
 
-## About me { #about-me }
+## Start Here { #latest-articles }
 
-<section class="about-author" markdown>
-<div class="about-author__media" markdown>
-![Jose Manuel Rodriguez Pineda](assets/images/about/jose-manuel-rodriguez-pineda.jpg)
-</div>
+If you are new to the site, start with the operational problem behind Sphere Integration Hub:
 
-<div class="about-author__content" markdown>
-<span class="tech-kicker">Author</span>
-
-### Jose Manuel Rodriguez Pineda
-
-I am a senior software architect focused on .NET, distributed systems, integration, and AI Engineering under operational control. This blog collects field notes from that work: reproducible automation, API-first workflows, execution evidence, and AI patterns that can survive real production constraints.
-
-<nav class="about-author__links" markdown>
-[LinkedIn profile :fontawesome-brands-linkedin:](https://www.linkedin.com/in/jmrpineda){ target="_blank" rel="noopener" }
-[PinedaTec.eu :octicons-arrow-up-right-24:](https://www.pinedatec.eu){ target="_blank" rel="noopener" }
-</nav>
-</div>
-</section>
-
-## SpecForge.AI Saga { #latest-articles }
-
-<div class="insight-list" markdown>
-
-<article class="insight-card" markdown>
-<a class="insight-card__media" href="specforge-ai/seven-layers-of-spec-driven-development/" markdown>
-![The seven layers of Spec-Driven Development](assets/images/specforge-ai/sdd-seven-layers.png)
-</a>
-
-<div class="insight-card__body" markdown>
-<span class="article-card__tag">SpecForge.AI</span>
-<span class="insight-card__meta">Published May 11, 2026 · SDD · Delivery control</span>
-
-### [Spec-Driven Development needs seven layers of control](specforge-ai/seven-layers-of-spec-driven-development.md)
-
-A technical model for turning intent into governed, auditable AI-assisted delivery through specs, workflows, artifacts, evidence, agents, audit, and regression.
-
-[Read article :octicons-arrow-right-24:](specforge-ai/seven-layers-of-spec-driven-development.md){ .insight-card__link }
-</div>
-</article>
-
-<article class="insight-card" markdown>
-<a class="insight-card__media" href="specforge-ai/governed-ai-assisted-development/" markdown>
-![AI-assisted development governance gap](assets/images/specforge-ai/ai-governance-gap.png)
-</a>
-
-<div class="insight-card__body" markdown>
-<span class="article-card__tag">SpecForge.AI</span>
-<span class="insight-card__meta">Published May 11, 2026 · SDD · AI governance</span>
-
-### [AI-assisted development has a governance problem](specforge-ai/governed-ai-assisted-development.md)
-
-AI coding agents are fast, but teams still need specifications, traceability, review evidence, and a source of truth that survives the chat.
-
-[Read article :octicons-arrow-right-24:](specforge-ai/governed-ai-assisted-development.md){ .insight-card__link }
-</div>
-</article>
-
-</div>
+- [The 3 AM Production Debugging Nightmare](sphere-integration-hub/3-am-production-debugging-nightmare.md) if your pain is production debugging across multiple APIs.
+- [SphereIntegrationHub: A Deterministic API Workflow Engine](sphere-integration-hub/deterministic-api-workflow-engine.md) if you want the product and architecture overview first.
+- [GitHub repository :octicons-mark-github-24:](https://github.com/PinedaTec-EU/SphereIntegrationHub){ target="_blank" rel="noopener" } if you want installation, samples, and source code.
+- [npm package](https://www.npmjs.com/package/@pinedatec.eu/sphere-integration-hub){ target="_blank" rel="noopener" } and [NuGet package](https://www.nuget.org/packages/SphereIntegrationHub.Tool){ target="_blank" rel="noopener" } if you want to try the CLI directly.
 
 ## Sphere Integration Hub Saga
+
+Deterministic API workflows, execution traces, CI/CD automation, and reproducible evidence for multi-step integrations.
 
 <div class="insight-list" markdown>
 
@@ -184,6 +134,67 @@ A practical look at the difference between scattered logs and execution evidence
 How to model reproducible API workflows, validate contracts before execution, and generate deterministic traces.
 
 [Read article :octicons-arrow-right-24:](sphere-integration-hub/deterministic-api-workflow-engine.md){ .insight-card__link }
+</div>
+</article>
+
+</div>
+
+## About me { #about-me }
+
+<section class="about-author" markdown>
+<div class="about-author__media" markdown>
+![Jose Manuel Rodriguez Pineda](assets/images/about/jose-manuel-rodriguez-pineda.jpg)
+</div>
+
+<div class="about-author__content" markdown>
+<span class="tech-kicker">Author</span>
+
+### Jose Manuel Rodriguez Pineda
+
+I am a senior software architect focused on .NET, distributed systems, integration, and AI Engineering under operational control. This blog collects field notes from that work: reproducible automation, API-first workflows, execution evidence, and AI patterns that can survive real production constraints.
+
+<nav class="about-author__links" markdown>
+[LinkedIn profile :fontawesome-brands-linkedin:](https://www.linkedin.com/in/jmrpineda){ target="_blank" rel="noopener" }
+[PinedaTec.eu :octicons-arrow-up-right-24:](https://www.pinedatec.eu){ target="_blank" rel="noopener" }
+</nav>
+</div>
+</section>
+
+## SpecForge.AI Saga
+
+<div class="insight-list" markdown>
+
+<article class="insight-card" markdown>
+<a class="insight-card__media" href="specforge-ai/seven-layers-of-spec-driven-development/" markdown>
+![The seven layers of Spec-Driven Development](assets/images/specforge-ai/sdd-seven-layers.png)
+</a>
+
+<div class="insight-card__body" markdown>
+<span class="article-card__tag">SpecForge.AI</span>
+<span class="insight-card__meta">Published May 11, 2026 · SDD · Delivery control</span>
+
+### [Spec-Driven Development needs seven layers of control](specforge-ai/seven-layers-of-spec-driven-development.md)
+
+A technical model for turning intent into governed, auditable AI-assisted delivery through specs, workflows, artifacts, evidence, agents, audit, and regression.
+
+[Read article :octicons-arrow-right-24:](specforge-ai/seven-layers-of-spec-driven-development.md){ .insight-card__link }
+</div>
+</article>
+
+<article class="insight-card" markdown>
+<a class="insight-card__media" href="specforge-ai/governed-ai-assisted-development/" markdown>
+![AI-assisted development governance gap](assets/images/specforge-ai/ai-governance-gap.png)
+</a>
+
+<div class="insight-card__body" markdown>
+<span class="article-card__tag">SpecForge.AI</span>
+<span class="insight-card__meta">Published May 11, 2026 · SDD · AI governance</span>
+
+### [AI-assisted development has a governance problem](specforge-ai/governed-ai-assisted-development.md)
+
+AI coding agents are fast, but teams still need specifications, traceability, review evidence, and a source of truth that survives the chat.
+
+[Read article :octicons-arrow-right-24:](specforge-ai/governed-ai-assisted-development.md){ .insight-card__link }
 </div>
 </article>
 

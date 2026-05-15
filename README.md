@@ -1,50 +1,51 @@
 # Tech Blog
 
-Repository for publishing technical articles about integration, automation, and
-software development tools, including Sphere Integration Hub.
+Technical articles about deterministic API workflows, execution evidence, integration automation, and AI-assisted engineering under operational control.
 
-## Content Conventions
+Site: [tech-blog.pinedatec.eu](https://tech-blog.pinedatec.eu/)
 
-Public articles must be written in English, including titles, descriptions,
-navigation labels, article cards, and social preview metadata.
+## Start Here
+
+If you are arriving from GitHub and want the strongest entry points first:
+
+- [The 3 AM Production Debugging Nightmare](https://tech-blog.pinedatec.eu/sphere-integration-hub/3-am-production-debugging-nightmare/) explains the production debugging pain behind Sphere Integration Hub.
+- [SphereIntegrationHub: A Deterministic API Workflow Engine](https://tech-blog.pinedatec.eu/sphere-integration-hub/deterministic-api-workflow-engine/) gives the product and architecture overview.
+- [Sphere Integration Hub repository](https://github.com/PinedaTec-EU/SphereIntegrationHub) contains the CLI, samples, MCP server, and workflow runtime.
+
+## Main Series
+
+### Sphere Integration Hub
+
+Focused on reproducible multi-API workflows, contract validation before execution, CI/CD automation, and portable execution evidence.
+
+### SpecForge.AI
+
+Focused on spec-driven development, AI-assisted delivery governance, traceability, and reviewable evidence.
+
+## Why This Repository Exists
+
+The public site replaced earlier article publishing on third-party platforms. The goal is to keep the canonical version of the articles in Git, publish them through GitHub Pages, and keep editorial control over structure, assets, and updates.
 
 ## Local Development
 
-MkDocs is installed on this machine, but the executable is located at:
-
-```sh
-/Users/jmr.pineda/Library/Python/3.9/bin/mkdocs
-```
-
-You can run it without changing `PATH` with:
+Run the local preview:
 
 ```sh
 python3 -m mkdocs serve
 ```
 
-Or add the user Python scripts directory to your shell:
+Build the static site:
 
 ```sh
-echo 'export PATH="$HOME/Library/Python/3.9/bin:$PATH"' >> ~/.zshrc
-source ~/.zshrc
-mkdocs --version
-```
-
-Useful commands:
-
-```sh
-python3 -m mkdocs serve
 python3 -m mkdocs build
 ```
 
+## Content Conventions
+
+Public articles are written in English, including titles, descriptions, navigation labels, article cards, and social preview metadata.
+
 ## Deployment
 
-The site is published to GitHub Pages through GitHub Actions.
+The site is published to GitHub Pages through GitHub Actions via `.github/workflows/deploy-pages.yml`.
 
-The workflow is located at:
-
-```sh
-.github/workflows/deploy-pages.yml
-```
-
-It runs automatically on pushes to `main` and can also be triggered manually from the Actions tab.
+Pushes to `main` trigger deployment automatically.
