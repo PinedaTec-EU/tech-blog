@@ -1,0 +1,31 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" fill="#09141A"/>
+  <rect x="60" y="60" width="1480" height="780" rx="32" fill="#0F2029" stroke="#24414D" stroke-width="2"/>
+  <text x="120" y="165" fill="#E8F6F8" font-family="Arial, sans-serif" font-size="62" font-weight="700">Switching issues should not mean rebuilding test context</text>
+  <text x="120" y="220" fill="#8EB6C0" font-family="Arial, sans-serif" font-size="28">Manual setup chaos across tools, people, and undocumented step order</text>
+
+  <rect x="110" y="300" width="290" height="150" rx="24" fill="#14303A" stroke="#2E5A66" stroke-width="2"/>
+  <text x="150" y="360" fill="#D8F2F6" font-family="Arial, sans-serif" font-size="34" font-weight="700">Postman</text>
+  <text x="150" y="405" fill="#95C6CF" font-family="Arial, sans-serif" font-size="24">One developer's request flow</text>
+
+  <rect x="460" y="300" width="290" height="150" rx="24" fill="#14303A" stroke="#2E5A66" stroke-width="2"/>
+  <text x="500" y="360" fill="#D8F2F6" font-family="Arial, sans-serif" font-size="34" font-weight="700">Python</text>
+  <text x="500" y="405" fill="#95C6CF" font-family="Arial, sans-serif" font-size="24">QA helper scripts</text>
+
+  <rect x="810" y="300" width="290" height="150" rx="24" fill="#14303A" stroke="#2E5A66" stroke-width="2"/>
+  <text x="850" y="360" fill="#D8F2F6" font-family="Arial, sans-serif" font-size="34" font-weight="700">SQL</text>
+  <text x="850" y="405" fill="#95C6CF" font-family="Arial, sans-serif" font-size="24">Direct state tweaks</text>
+
+  <rect x="1160" y="300" width="290" height="150" rx="24" fill="#14303A" stroke="#2E5A66" stroke-width="2"/>
+  <text x="1200" y="360" fill="#D8F2F6" font-family="Arial, sans-serif" font-size="34" font-weight="700">Browser</text>
+  <text x="1200" y="405" fill="#95C6CF" font-family="Arial, sans-serif" font-size="24">Manual confirmation steps</text>
+
+  <line x1="255" y1="450" x2="800" y2="610" stroke="#FF7A59" stroke-width="6" stroke-linecap="round"/>
+  <line x1="605" y1="450" x2="800" y2="610" stroke="#FF7A59" stroke-width="6" stroke-linecap="round"/>
+  <line x1="955" y1="450" x2="800" y2="610" stroke="#FF7A59" stroke-width="6" stroke-linecap="round"/>
+  <line x1="1305" y1="450" x2="800" y2="610" stroke="#FF7A59" stroke-width="6" stroke-linecap="round"/>
+
+  <rect x="555" y="600" width="490" height="170" rx="28" fill="#30161B" stroke="#B24A5B" stroke-width="2"/>
+  <text x="610" y="670" fill="#FFF1F3" font-family="Arial, sans-serif" font-size="40" font-weight="700">Issue setup chaos</text>
+  <text x="610" y="715" fill="#F2B7C0" font-family="Arial, sans-serif" font-size="26">Different orders, different shortcuts, different outcomes</text>
+</svg>

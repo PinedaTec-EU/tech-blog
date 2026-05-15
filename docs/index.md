@@ -41,6 +41,7 @@ replay multi-API workflows
 
 If you are new to the site, start with the operational problem behind Sphere Integration Hub:
 
+- [Switching Issues Should Not Mean Rebuilding Test Context](sphere-integration-hub/switching-issues-should-not-mean-rebuilding-test-context.md) if your pain is daily issue setup chaos across APIs, SQL, and manual steps.
 - [The 3 AM Production Debugging Nightmare](sphere-integration-hub/3-am-production-debugging-nightmare.md) if your pain is production debugging across multiple APIs.
 - [SphereIntegrationHub: A Deterministic API Workflow Engine](sphere-integration-hub/deterministic-api-workflow-engine.md) if you want the product and architecture overview first.
 - [GitHub repository :octicons-mark-github-24:](https://github.com/PinedaTec-EU/SphereIntegrationHub){ target="_blank" rel="noopener" } if you want installation, samples, and source code.
@@ -51,6 +52,23 @@ If you are new to the site, start with the operational problem behind Sphere Int
 Deterministic API workflows, execution traces, CI/CD automation, and reproducible evidence for multi-step integrations.
 
 <div class="insight-list" markdown>
+
+<article class="insight-card" markdown>
+<a class="insight-card__media" href="sphere-integration-hub/switching-issues-should-not-mean-rebuilding-test-context/" markdown>
+![Manual issue setup chaos across tools and steps](assets/images/sphere-integration-hub/switching-issues-rebuilding-context.svg)
+</a>
+
+<div class="insight-card__body" markdown>
+<span class="article-card__tag">Sphere Integration Hub</span>
+<span class="insight-card__meta">Published May 15, 2026 · Issue setup · Reproducibility</span>
+
+### [Switching Issues Should Not Mean Rebuilding Test Context](sphere-integration-hub/switching-issues-should-not-mean-rebuilding-test-context.md)
+
+Why manual issue setup across Postman, Python, SQL, and browser steps becomes chaos, and how deterministic workflows give teams a shared context path.
+
+[Read article :octicons-arrow-right-24:](sphere-integration-hub/switching-issues-should-not-mean-rebuilding-test-context.md){ .insight-card__link }
+</div>
+</article>
 
 <article class="insight-card" markdown>
 <a class="insight-card__media" href="sphere-integration-hub/cloudflare-dns-public-ip-sync/" markdown>

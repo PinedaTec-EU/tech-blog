@@ -1,0 +1,34 @@
+<svg width="1600" height="820" viewBox="0 0 1600 820" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="820" fill="#081218"/>
+  <rect x="50" y="50" width="1500" height="720" rx="30" fill="#0D1D24" stroke="#223E48" stroke-width="2"/>
+  <text x="110" y="135" fill="#EAF7F9" font-family="Arial, sans-serif" font-size="56" font-weight="700">Deterministic issue context workflow</text>
+  <text x="110" y="185" fill="#8FB8C2" font-family="Arial, sans-serif" font-size="28">One shared order, explicit context passing, inspectable setup evidence</text>
+
+  <rect x="120" y="300" width="250" height="130" rx="22" fill="#12333D" stroke="#2F5D69" stroke-width="2"/>
+  <text x="178" y="360" fill="#E4F6F8" font-family="Arial, sans-serif" font-size="34" font-weight="700">Login</text>
+  <text x="154" y="403" fill="#99C8D1" font-family="Arial, sans-serif" font-size="22">Capture JWT once</text>
+
+  <rect x="470" y="300" width="250" height="130" rx="22" fill="#12333D" stroke="#2F5D69" stroke-width="2"/>
+  <text x="510" y="360" fill="#E4F6F8" font-family="Arial, sans-serif" font-size="34" font-weight="700">Customer</text>
+  <text x="512" y="403" fill="#99C8D1" font-family="Arial, sans-serif" font-size="22">Create or fetch</text>
+
+  <rect x="820" y="300" width="250" height="130" rx="22" fill="#12333D" stroke="#2F5D69" stroke-width="2"/>
+  <text x="852" y="360" fill="#E4F6F8" font-family="Arial, sans-serif" font-size="34" font-weight="700">State</text>
+  <text x="864" y="403" fill="#99C8D1" font-family="Arial, sans-serif" font-size="22">Build scenario</text>
+
+  <rect x="1170" y="300" width="250" height="130" rx="22" fill="#12333D" stroke="#2F5D69" stroke-width="2"/>
+  <text x="1196" y="360" fill="#E4F6F8" font-family="Arial, sans-serif" font-size="34" font-weight="700">Evidence</text>
+  <text x="1208" y="403" fill="#99C8D1" font-family="Arial, sans-serif" font-size="22">Keep the run</text>
+
+  <line x1="370" y1="365" x2="470" y2="365" stroke="#69D1E0" stroke-width="8" stroke-linecap="round"/>
+  <line x1="720" y1="365" x2="820" y2="365" stroke="#69D1E0" stroke-width="8" stroke-linecap="round"/>
+  <line x1="1070" y1="365" x2="1170" y2="365" stroke="#69D1E0" stroke-width="8" stroke-linecap="round"/>
+
+  <polygon points="452,365 430,351 430,379" fill="#69D1E0"/>
+  <polygon points="802,365 780,351 780,379" fill="#69D1E0"/>
+  <polygon points="1152,365 1130,351 1130,379" fill="#69D1E0"/>
+
+  <rect x="235" y="545" width="1130" height="120" rx="24" fill="#112730" stroke="#2B5561" stroke-width="2"/>
+  <text x="300" y="602" fill="#E9F8FA" font-family="Arial, sans-serif" font-size="34" font-weight="700">Outcome</text>
+  <text x="300" y="642" fill="#9AC9D1" font-family="Arial, sans-serif" font-size="24">Any developer, QA engineer, or CI job can recreate the same issue context from the same workflow.</text>
+</svg>
