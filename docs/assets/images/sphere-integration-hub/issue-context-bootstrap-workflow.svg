@@ -1,0 +1,55 @@
+<svg width="1600" height="820" viewBox="0 0 1600 820" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="workflowBg" x1="70" y1="60" x2="1530" y2="760" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B1116"/>
+      <stop offset="1" stop-color="#131C23"/>
+    </linearGradient>
+    <linearGradient id="workflowPanel" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#243543" stop-opacity="0.76"/>
+      <stop offset="1" stop-color="#18232C" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="workflowResult" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#22313D" stop-opacity="0.82"/>
+      <stop offset="1" stop-color="#151F27" stop-opacity="0.94"/>
+    </linearGradient>
+    <filter id="workflowGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="820" fill="#1B1B1B"/>
+  <rect x="56" y="56" width="1488" height="708" rx="28" fill="url(#workflowBg)"/>
+  <rect x="96" y="96" width="1408" height="628" rx="34" fill="#A9C0CD" fill-opacity="0.045" stroke="#536671" stroke-opacity="0.55" stroke-width="2"/>
+  <ellipse cx="1320" cy="180" rx="160" ry="78" fill="#8A9CA8" fill-opacity="0.08" filter="url(#workflowGlow)"/>
+
+  <text x="126" y="164" fill="#E5EDF1" font-family="Arial, sans-serif" font-size="54" font-weight="700">Deterministic issue context workflow</text>
+  <text x="128" y="214" fill="#98ABB6" font-family="Arial, sans-serif" font-size="28">One shared order, explicit context passing, inspectable setup evidence</text>
+
+  <rect x="130" y="332" width="252" height="132" rx="24" fill="url(#workflowPanel)" stroke="#506977" stroke-opacity="0.75" stroke-width="2"/>
+  <text x="194" y="388" fill="#EEF4F7" font-family="Arial, sans-serif" font-size="34" font-weight="700">Login</text>
+  <text x="174" y="432" fill="#A9BCC7" font-family="Arial, sans-serif" font-size="22">Capture JWT once</text>
+
+  <rect x="472" y="332" width="252" height="132" rx="24" fill="url(#workflowPanel)" stroke="#506977" stroke-opacity="0.75" stroke-width="2"/>
+  <text x="520" y="388" fill="#EEF4F7" font-family="Arial, sans-serif" font-size="34" font-weight="700">Customer</text>
+  <text x="536" y="432" fill="#A9BCC7" font-family="Arial, sans-serif" font-size="22">Create or fetch</text>
+
+  <rect x="814" y="332" width="252" height="132" rx="24" fill="url(#workflowPanel)" stroke="#506977" stroke-opacity="0.75" stroke-width="2"/>
+  <text x="878" y="388" fill="#EEF4F7" font-family="Arial, sans-serif" font-size="34" font-weight="700">State</text>
+  <text x="861" y="432" fill="#A9BCC7" font-family="Arial, sans-serif" font-size="22">Build issue scenario</text>
+
+  <rect x="1156" y="332" width="252" height="132" rx="24" fill="url(#workflowPanel)" stroke="#506977" stroke-opacity="0.75" stroke-width="2"/>
+  <text x="1206" y="388" fill="#EEF4F7" font-family="Arial, sans-serif" font-size="34" font-weight="700">Evidence</text>
+  <text x="1218" y="432" fill="#A9BCC7" font-family="Arial, sans-serif" font-size="22">Keep the run</text>
+
+  <line x1="382" y1="398" x2="472" y2="398" stroke="#8FA8B5" stroke-width="6" stroke-linecap="round"/>
+  <line x1="724" y1="398" x2="814" y2="398" stroke="#8FA8B5" stroke-width="6" stroke-linecap="round"/>
+  <line x1="1066" y1="398" x2="1156" y2="398" stroke="#8FA8B5" stroke-width="6" stroke-linecap="round"/>
+
+  <polygon points="452,398 430,384 430,412" fill="#8FA8B5"/>
+  <polygon points="794,398 772,384 772,412" fill="#8FA8B5"/>
+  <polygon points="1136,398 1114,384 1114,412" fill="#8FA8B5"/>
+
+  <rect x="260" y="550" width="1080" height="112" rx="24" fill="url(#workflowResult)" stroke="#5A707C" stroke-opacity="0.78" stroke-width="2"/>
+  <text x="316" y="606" fill="#EAF1F4" font-family="Arial, sans-serif" font-size="32" font-weight="700">Outcome</text>
+  <text x="316" y="646" fill="#A3B7C2" font-family="Arial, sans-serif" font-size="23">Any developer, QA engineer, or CI job can recreate the same issue context from the same workflow.</text>
+</svg>

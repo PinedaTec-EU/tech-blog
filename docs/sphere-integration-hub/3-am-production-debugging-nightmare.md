@@ -8,7 +8,7 @@ image: assets/images/sphere-integration-hub/SIH.png
 
 Deterministic execution reports for API workflows and production debugging.
 
-Compatibility: Sphere Integration Hub `v1.7.20.278`, commit `c99028ab931c2b213573377382dc7855715af3ec`.
+Compatibility: Sphere Integration Hub `v1.7.20`.
 
 ### The Pain: Distributed Debugging Without Correlation
 

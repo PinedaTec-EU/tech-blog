@@ -10,7 +10,7 @@ Dynamic public IPs are still a production problem in small infrastructure, lab e
 
 The host works. The service is healthy. Then the public IP changes and the DNS record keeps pointing to yesterday.
 
-Compatibility: Sphere Integration Hub `v1.7.20.278`. Sample validation: `--dry-run` and `--mocked` passed against that version.
+Compatibility: Sphere Integration Hub `v1.7.20`. Sample validation: `--dry-run` and `--mocked` passed against that version.
 
 ![Public IP discovery and Cloudflare DNS sync workflow](../assets/images/sphere-integration-hub/cloudflare-dns-public-ip-sync.png)
 
