@@ -13,6 +13,8 @@ A way to define and execute API workflows deterministically.
 
 Compatibility: Sphere Integration Hub `v1.7.20`.
 
+![Sphere Integration Hub deterministic workflow engine](../assets/images/sphere-integration-hub/SIH.png)
+
 ## The Real Problem: Lack of Deterministic Execution
 
 Most teams do not struggle with calling APIs.
