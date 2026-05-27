@@ -1,0 +1,48 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Inventory Service",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/api/reservations": {
+      "post": {
+        "operationId": "createReservation",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": ["userId", "sku", "quantity"],
+                "properties": {
+                  "userId": { "type": "string" },
+                  "sku": { "type": "string" },
+                  "quantity": { "type": "integer" }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Reservation result",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": ["reservationId", "reserved", "simulatedDelayMs"],
+                  "properties": {
+                    "reservationId": { "type": "string" },
+                    "reserved": { "type": "boolean" },
+                    "simulatedDelayMs": { "type": "integer" }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

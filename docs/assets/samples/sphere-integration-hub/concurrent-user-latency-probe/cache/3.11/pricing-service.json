@@ -1,0 +1,49 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Pricing Service",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/api/quotes": {
+      "post": {
+        "operationId": "createQuote",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": ["userId", "sku", "quantity", "unitPrice"],
+                "properties": {
+                  "userId": { "type": "string" },
+                  "sku": { "type": "string" },
+                  "quantity": { "type": "integer" },
+                  "unitPrice": { "type": "number" }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Quote result",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": ["quoteId", "totalAmount", "simulatedDelayMs"],
+                  "properties": {
+                    "quoteId": { "type": "string" },
+                    "totalAmount": { "type": "number" },
+                    "simulatedDelayMs": { "type": "integer" }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

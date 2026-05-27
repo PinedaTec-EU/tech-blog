@@ -1,0 +1,25 @@
+- version: 3.11
+  plugins:
+    - id: http
+      contractVersion: "1.0"
+      runtimeVersion: "1.0"
+  definitions:
+    - name: inventory-service
+      contractType: openapi
+      openApiUrl: file:///Users/jmr.pineda/Projects/GitHub/PinedaTec.eu/tech-blog/docs/assets/samples/sphere-integration-hub/concurrent-user-latency-probe/inventory.openapi.json
+      basePath: /
+      baseUrl:
+        local: http://127.0.0.1:4101
+    - name: pricing-service
+      contractType: openapi
+      openApiUrl: file:///Users/jmr.pineda/Projects/GitHub/PinedaTec.eu/tech-blog/docs/assets/samples/sphere-integration-hub/concurrent-user-latency-probe/pricing.openapi.json
+      basePath: /
+      baseUrl:
+        local: http://127.0.0.1:4102
+    - name: checkout-service
+      contractType: openapi
+      openApiUrl: file:///Users/jmr.pineda/Projects/GitHub/PinedaTec.eu/tech-blog/docs/assets/samples/sphere-integration-hub/concurrent-user-latency-probe/checkout.openapi.json
+      basePath: /
+      baseUrl:
+        local: http://127.0.0.1:4103
+  connections: []

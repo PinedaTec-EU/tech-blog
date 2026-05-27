@@ -1,0 +1,51 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Checkout Service",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/api/authorizations": {
+      "post": {
+        "operationId": "authorizeCheckout",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": ["userId", "cartId", "quoteId", "totalAmount"],
+                "properties": {
+                  "userId": { "type": "string" },
+                  "cartId": { "type": "string" },
+                  "quoteId": { "type": "string" },
+                  "totalAmount": { "type": "number" }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Checkout authorization result",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": ["checkoutId", "approved", "simulatedDelayMs", "spike"],
+                  "properties": {
+                    "checkoutId": { "type": "string" },
+                    "approved": { "type": "boolean" },
+                    "simulatedDelayMs": { "type": "integer" },
+                    "spike": { "type": "boolean" },
+                    "bottleneck": { "type": "string" }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
