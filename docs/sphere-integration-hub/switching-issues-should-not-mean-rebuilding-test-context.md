@@ -1,7 +1,7 @@
 ---
 title: Switching Issues Should Not Mean Rebuilding Test Context
 description: Why manual issue setup becomes chaos in API-heavy projects, and how deterministic workflows give teams a repeatable way to create working context.
-image: assets/images/sphere-integration-hub/switching-issues-rebuilding-context.svg
+image: assets/images/sphere-integration-hub/switching-issues-rebuilding-context.png
 author: José Manuel Rodríguez Pineda
 author_id: jmpineda
 published: 2026-05-15
@@ -13,7 +13,7 @@ I worked on a project where getting ready to work on an issue was often harder t
 
 Compatibility: Sphere Integration Hub `v1.7.20.278`.
 
-![Manual issue setup chaos across Postman, Python, SQL, and browser tabs](../assets/images/sphere-integration-hub/switching-issues-rebuilding-context.svg)
+![Manual issue setup chaos converging into a deterministic workflow](../assets/images/sphere-integration-hub/switching-issues-rebuilding-context.png)
 
 ## The pain
 
