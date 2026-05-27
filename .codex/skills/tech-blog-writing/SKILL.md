@@ -43,11 +43,16 @@ The blog voice is practical, direct, and technical. It starts from a real engine
   - `title`: the social/link-preview title
   - `description`: a compact summary for search and social previews
   - `image`: the conceptual article header image path, relative to `docs/`. This image is also used for Open Graph and Twitter/X link previews.
+  - `author`: the public author name shown on the article page
+  - `author_id`: the stable internal author handle, for example `jmpineda`
+  - `published`: the canonical publication date in `YYYY-MM-DD`
+  - `updated`: optional last meaningful update date in `YYYY-MM-DD`
 - Every article should have a conceptual header image that adds meaning to the article. Put it near the top of the article, after the compatibility marker when present and before the first major section.
 - Prefer a specific image per article over the generic series image. Use the generic series image only as a temporary fallback.
 - For Sphere Integration Hub articles, keep article images in `docs/assets/images/sphere-integration-hub/` and use a stable slug filename, for example `article-slug.png`.
 - Keep social preview images in `docs/assets/images/<series>/` so MkDocs publishes them as stable absolute URLs.
 - The MkDocs template emits Open Graph and Twitter card tags from this front matter. Verify generated HTML includes the article-specific `og:image` before publishing articles meant to be shared on LinkedIn.
+- The article page should show `By <author> · Published <date>` under the `H1`. Show `Updated <date>` only when the article changed meaningfully after publication.
 - Title as a concrete technical claim.
 - First section: the pain.
 - Middle sections: how teams usually handle it, where that fails, what SIH does.
@@ -59,6 +64,8 @@ The blog voice is practical, direct, and technical. It starts from a real engine
 - LinkedIn posts for blog articles must include at least 3 focused hashtags.
 - One LinkedIn hashtag must always be `#PinedaTecEU`.
 - Use tags that describe the concrete engineering topic, not broad hype.
+- When drafting LinkedIn companion posts for this repository, prefer an audience-first opener when the intended reader is specific and easy to name. Put the audience in the first line in natural language, for example `Backend developers and QA engineers testing API integrations:` or `DevOps teams troubleshooting production issues:`.
+- Use the audience-first opener as a distribution heuristic, not as filler. Skip it when the audience would be vague, generic, or forced.
 
 ## Index card rules
 

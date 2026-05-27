@@ -46,6 +46,7 @@ nav:
       - Spec-Driven Development needs seven layers of control: specforge-ai/seven-layers-of-spec-driven-development.md
       - AI-assisted development has a governance problem: specforge-ai/governed-ai-assisted-development.md
   - Sphere Integration Hub:
+      - Simulate Concurrent Users and Catch Latency Spikes with a Deterministic Workflow: sphere-integration-hub/simulate-concurrent-users-and-catch-latency-spikes.md
       - Switching Issues Should Not Mean Rebuilding Test Context: sphere-integration-hub/switching-issues-should-not-mean-rebuilding-test-context.md
       - Deterministic API Workflow Engine: sphere-integration-hub/deterministic-api-workflow-engine.md
       - The 3 AM Production Debugging Nightmare: sphere-integration-hub/3-am-production-debugging-nightmare.md
@@ -56,6 +57,7 @@ nav:
 markdown_extensions:
   - admonition
   - attr_list
+  - meta
   - md_in_html
   - tables
   - pymdownx.details

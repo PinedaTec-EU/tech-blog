@@ -2,6 +2,10 @@
 title: Keep Cloudflare DNS Records Synced from a Workflow
 description: Use Sphere Integration Hub to discover the public IP visible from infrastructure and update Cloudflare DNS records from a JSON inventory.
 image: assets/images/sphere-integration-hub/cloudflare-dns-public-ip-sync.png
+author: José Manuel Rodríguez Pineda
+author_id: jmpineda
+published: 2026-05-08
+updated: 2026-05-11
 ---
 
 # Keep Cloudflare DNS records synced from a workflow

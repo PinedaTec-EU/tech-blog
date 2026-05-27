@@ -2,6 +2,9 @@
 title: Switching Issues Should Not Mean Rebuilding Test Context
 description: Why manual issue setup becomes chaos in API-heavy projects, and how deterministic workflows give teams a repeatable way to create working context.
 image: assets/images/sphere-integration-hub/switching-issues-rebuilding-context.svg
+author: José Manuel Rodríguez Pineda
+author_id: jmpineda
+published: 2026-05-15
 ---
 
 # Switching Issues Should Not Mean Rebuilding Test Context

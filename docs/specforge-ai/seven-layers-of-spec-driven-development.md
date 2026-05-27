@@ -2,6 +2,9 @@
 title: "Spec-Driven Development needs seven layers of control"
 description: "A technical model for turning intent into governed, auditable AI-assisted delivery through specs, workflows, artifacts, evidence, agents, audit, and regression."
 image: assets/images/specforge-ai/sdd-seven-layers.png
+author: José Manuel Rodríguez Pineda
+author_id: jmpineda
+published: 2026-05-11
 ---
 
 # Spec-Driven Development needs seven layers of control

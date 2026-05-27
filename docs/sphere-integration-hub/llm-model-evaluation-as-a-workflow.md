@@ -2,6 +2,10 @@
 title: LLM Model Evaluation as a Workflow
 description: Evaluate LLM and SLM candidates for an enterprise use case without manual scoring scripts.
 image: assets/images/sphere-integration-hub/SIH.png
+author: José Manuel Rodríguez Pineda
+author_id: jmpineda
+published: 2026-05-07
+updated: 2026-05-11
 ---
 
 # LLM model evaluation as a workflow

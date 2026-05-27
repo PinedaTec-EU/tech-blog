@@ -2,6 +2,9 @@
 title: "AI-assisted development has a governance problem"
 description: "AI coding agents are fast, but teams still need specifications, traceability, review evidence, and a source of truth that survives the chat."
 image: assets/images/specforge-ai/ai-governance-gap.png
+author: José Manuel Rodríguez Pineda
+author_id: jmpineda
+published: 2026-05-11
 ---
 
 # AI-assisted development has a governance problem

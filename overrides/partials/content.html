@@ -1,0 +1,32 @@
+{% include "partials/tags.html" %}
+{% include "partials/actions.html" %}
+{% set has_article_meta = page.meta and not page.is_homepage and (page.meta.author or page.meta.published or page.meta.updated) %}
+{% if has_article_meta %}
+  {% set article_meta_markup %}
+    <div class="article-meta">
+      {% if page.meta.author %}
+        <span class="article-meta__item">By {{ page.meta.author }}</span>
+      {% endif %}
+      {% if page.meta.published %}
+        <span class="article-meta__item">Published <time datetime="{{ page.meta.published }}">{{ page.meta.published.strftime("%B %-d, %Y") }}</time></span>
+      {% endif %}
+      {% if page.meta.updated and page.meta.updated != page.meta.published %}
+        <span class="article-meta__item">Updated <time datetime="{{ page.meta.updated }}">{{ page.meta.updated.strftime("%B %-d, %Y") }}</time></span>
+      {% endif %}
+    </div>
+  {% endset %}
+{% endif %}
+{% if "\u003ch1" not in page.content %}
+  <h1>{{ page.title | d(config.site_name, true)}}</h1>
+  {% if has_article_meta %}
+    {{ article_meta_markup }}
+  {% endif %}
+  {{ page.content }}
+{% elif has_article_meta %}
+  {{ page.content | replace("</h1>", "</h1>" ~ article_meta_markup, 1) }}
+{% else %}
+  {{ page.content }}
+{% endif %}
+{% include "partials/source-file.html" %}
+{% include "partials/feedback.html" %}
+{% include "partials/comments.html" %}

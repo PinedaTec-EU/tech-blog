@@ -18,6 +18,15 @@
   <meta property="og:image" content="{{ image_url }}">
   <meta property="og:image:secure_url" content="{{ image_url }}">
   <meta property="og:image:type" content="image/png">
+  {% if page.meta and page.meta.author %}
+    <meta property="article:author" content="{{ page.meta.author }}">
+  {% endif %}
+  {% if page.meta and page.meta.published %}
+    <meta property="article:published_time" content="{{ page.meta.published }}">
+  {% endif %}
+  {% if page.meta and page.meta.updated %}
+    <meta property="article:modified_time" content="{{ page.meta.updated }}">
+  {% endif %}
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{{ title }}">
   {% if description %}

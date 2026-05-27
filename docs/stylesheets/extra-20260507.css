@@ -47,6 +47,31 @@
   color: var(--md-default-fg-color);
 }
 
+.article-meta {
+  color: var(--md-default-fg-color--light);
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.8rem;
+  gap: 0.6rem 1rem;
+  margin: -0.35rem 0 1.1rem;
+}
+
+.article-meta__item {
+  align-items: center;
+  display: inline-flex;
+  gap: 0.35rem;
+}
+
+.article-meta__item + .article-meta__item::before {
+  color: color-mix(in srgb, var(--md-default-fg-color--light) 72%, transparent);
+  content: "·";
+  margin-right: 0.65rem;
+}
+
+.article-meta time {
+  font-weight: 600;
+}
+
 .md-typeset h2 {
   border-bottom: 1px solid var(--pt-border);
   padding-bottom: 0.35rem;

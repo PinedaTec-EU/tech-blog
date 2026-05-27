@@ -2,6 +2,9 @@
 title: The 3 AM Production Debugging Nightmare
 description: Why reproducible workflow evidence matters when API failures reach production.
 image: assets/images/sphere-integration-hub/SIH.png
+author: José Manuel Rodríguez Pineda
+author_id: jmpineda
+published: 2026-05-05
 ---
 
 # The 3 AM Production Debugging Nightmare
