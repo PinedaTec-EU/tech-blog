@@ -5,13 +5,19 @@
   {% set article_meta_markup %}
     <div class="article-meta">
       {% if page.meta.author %}
-        <span class="article-meta__item">By {{ page.meta.author }}</span>
+        <div class="article-meta__line article-meta__line--author">
+          <span class="article-meta__item">By {{ page.meta.author }}</span>
+        </div>
       {% endif %}
-      {% if page.meta.published %}
-        <span class="article-meta__item">Published <time datetime="{{ page.meta.published }}">{{ page.meta.published.strftime("%B %-d, %Y") }}</time></span>
-      {% endif %}
-      {% if page.meta.updated and page.meta.updated != page.meta.published %}
-        <span class="article-meta__item">Updated <time datetime="{{ page.meta.updated }}">{{ page.meta.updated.strftime("%B %-d, %Y") }}</time></span>
+      {% if page.meta.published or (page.meta.updated and page.meta.updated != page.meta.published) %}
+        <div class="article-meta__line article-meta__line--dates">
+          {% if page.meta.published %}
+            <span class="article-meta__item">Published <time datetime="{{ page.meta.published }}">{{ page.meta.published.strftime("%B %-d, %Y") }}</time></span>
+          {% endif %}
+          {% if page.meta.updated and page.meta.updated != page.meta.published %}
+            <span class="article-meta__item">Updated <time datetime="{{ page.meta.updated }}">{{ page.meta.updated.strftime("%B %-d, %Y") }}</time></span>
+          {% endif %}
+        </div>
       {% endif %}
     </div>
   {% endset %}
