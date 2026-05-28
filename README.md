@@ -44,6 +44,8 @@ python3 -m mkdocs build
 
 Public articles are written in English, including titles, descriptions, navigation labels, article cards, and social preview metadata.
 
+For LinkedIn companion posts that promote articles from this repository, prefer an audience-first opener when the intended reader is specific. Put the audience in the first line in natural language instead of forcing a literal `Target audience:` label. Treat this as a practical reach heuristic based on observed post performance, not as a guaranteed platform rule.
+
 ## Deployment
 
 The site is published to GitHub Pages through GitHub Actions via `.github/workflows/deploy-pages.yml`.
