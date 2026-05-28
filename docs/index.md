@@ -160,7 +160,7 @@ How to run a reproducible multi-API concurrency probe, simulate parallel users, 
 
 <article class="insight-card" markdown>
 <a class="insight-card__media" href="sphere-integration-hub/switching-issues-should-not-mean-rebuilding-test-context/" markdown>
-![Manual issue setup chaos across tools and steps](assets/images/sphere-integration-hub/switching-issues-rebuilding-context.svg)
+![Manual issue setup chaos across tools and steps](assets/images/sphere-integration-hub/switching-issues-rebuilding-context.png)
 </a>
 
 <div class="insight-card__body" markdown>
@@ -194,7 +194,7 @@ How to discover the public IP visible from infrastructure and update Cloudflare 
 
 <article class="insight-card" markdown>
 <a class="insight-card__media" href="sphere-integration-hub/llm-model-evaluation-as-a-workflow/" markdown>
-![LLM model evaluation workflow](assets/images/sphere-integration-hub/llm-model-evaluation.svg)
+![Sphere Integration Hub](assets/images/sphere-integration-hub/SIH.png)
 </a>
 
 <div class="insight-card__body" markdown>
@@ -211,7 +211,7 @@ How to evaluate LLM/SLM candidates for an enterprise use case without manual sco
 
 <article class="insight-card" markdown>
 <a class="insight-card__media" href="sphere-integration-hub/llm-powered-test-data-generation/" markdown>
-![LLM-powered test data generation](assets/images/sphere-integration-hub/llm-test-data-generation.svg)
+![Sphere Integration Hub](assets/images/sphere-integration-hub/SIH.png)
 </a>
 
 <div class="insight-card__body" markdown>
@@ -228,7 +228,7 @@ How to use LLM stages inside SIH workflows to generate realistic test data, vali
 
 <article class="insight-card" markdown>
 <a class="insight-card__media" href="sphere-integration-hub/3-am-production-debugging-nightmare/" markdown>
-![Execution report stage details](assets/images/sphere-integration-hub/execution-report-stage-details.png)
+![Sphere Integration Hub](assets/images/sphere-integration-hub/SIH.png)
 </a>
 
 <div class="insight-card__body" markdown>
@@ -245,7 +245,7 @@ A practical look at the difference between scattered logs and execution evidence
 
 <article class="insight-card" markdown>
 <a class="insight-card__media" href="sphere-integration-hub/deterministic-api-workflow-engine/" markdown>
-![Deterministic workflow trace](assets/images/sphere-integration-hub/deterministic-workflow-trace.png)
+![Sphere Integration Hub](assets/images/sphere-integration-hub/SIH.png)
 </a>
 
 <div class="insight-card__body" markdown>
