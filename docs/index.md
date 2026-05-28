@@ -11,12 +11,13 @@ hide:
 
 <span class="tech-kicker">Technical articles</span>
 
-# Reproducible workflows for real integration problems.
+# Reproducible engineering systems for integration and AI-assisted delivery.
 
-Field notes on API workflows, execution evidence, deterministic automation, and AI-assisted engineering that can survive production constraints.
+Field notes from two open repositories: Sphere Integration Hub for deterministic API workflows, and SpecForge.AI for governed spec-driven development.
 
 <nav class="hero-links" markdown>
-[Start with Sphere Integration Hub :octicons-arrow-right-24:](sphere-integration-hub/3-am-production-debugging-nightmare.md)
+[Start with SIH :octicons-arrow-right-24:](sphere-integration-hub/3-am-production-debugging-nightmare.md)
+[Start with SpecForge.AI :octicons-arrow-right-24:](specforge-ai/governed-ai-assisted-development.md)
 [Browse series :octicons-beaker-24:](#series)
 </nav>
 
@@ -24,7 +25,7 @@ Field notes on API workflows, execution evidence, deterministic automation, and 
 
 <div class="tech-hero__panel" markdown>
 
-<span class="series-label">Current series</span>
+<span class="series-label">Current repositories</span>
 
 ## Sphere Integration Hub
 
@@ -34,18 +35,88 @@ replay multi-API workflows
   keep execution evidence
 ```
 
+## SpecForge.AI
+
+```text
+turn intent into specs
+  govern agent workflow phases
+  preserve delivery evidence
+```
+
 </div>
 </section>
 
 ## Start Here { #latest-articles }
 
-If you are new to the site, start with the operational problem behind Sphere Integration Hub:
+If you are new to the site, choose the track that matches the problem in front of you.
+
+<div class="article-grid" markdown>
+
+<section class="article-card" markdown>
+<span class="article-card__tag">Sphere Integration Hub</span>
+
+### Deterministic API workflows
+
+Start here when the pain is multi-API testing, production debugging, contract validation, CI evidence, or repeatable integration automation.
 
 - [Switching Issues Should Not Mean Rebuilding Test Context](sphere-integration-hub/switching-issues-should-not-mean-rebuilding-test-context.md) if your pain is daily issue setup chaos across APIs, SQL, and manual steps.
 - [The 3 AM Production Debugging Nightmare](sphere-integration-hub/3-am-production-debugging-nightmare.md) if your pain is production debugging across multiple APIs.
 - [SphereIntegrationHub: A Deterministic API Workflow Engine](sphere-integration-hub/deterministic-api-workflow-engine.md) if you want the product and architecture overview first.
 - [GitHub repository :octicons-mark-github-24:](https://github.com/PinedaTec-EU/SphereIntegrationHub){ target="_blank" rel="noopener" } if you want installation, samples, and source code.
 - [npm package](https://www.npmjs.com/package/@pinedatec.eu/sphere-integration-hub){ target="_blank" rel="noopener" } and [NuGet package](https://www.nuget.org/packages/SphereIntegrationHub.Tool){ target="_blank" rel="noopener" } if you want to try the CLI directly.
+</section>
+
+<section class="article-card" markdown>
+<span class="article-card__tag">SpecForge.AI</span>
+
+### Governed spec-driven development
+
+Start here when the pain is AI-assisted delivery without durable specs, review evidence, workflow state, audit trail, or a repository-owned source of truth.
+
+- [AI-assisted development has a governance problem](specforge-ai/governed-ai-assisted-development.md) if your pain is agent speed without enough traceability.
+- [Spec-Driven Development needs seven layers of control](specforge-ai/seven-layers-of-spec-driven-development.md) if you want the operating model behind governed SDD.
+- [SpecForge.AI repository :octicons-mark-github-24:](https://github.com/PinedaTec-EU/SpecForge.AI){ target="_blank" rel="noopener" } if you want the public source repository.
+</section>
+
+</div>
+
+## Latest Across Both Tracks
+
+<div class="article-grid" markdown>
+
+<article class="article-card" markdown>
+<span class="article-card__tag">Sphere Integration Hub</span>
+
+### [Postman Collections Rot When API Teams Scale](sphere-integration-hub/postman-collections-rot-when-api-teams-scale.md)
+
+Published May 28, 2026 · API workflows · Contract validation
+</article>
+
+<article class="article-card" markdown>
+<span class="article-card__tag">Sphere Integration Hub</span>
+
+### [Simulate concurrent users and catch latency spikes with a deterministic workflow](sphere-integration-hub/simulate-concurrent-users-and-catch-latency-spikes.md)
+
+Published May 19, 2026 · Concurrency · Latency
+</article>
+
+<article class="article-card" markdown>
+<span class="article-card__tag">SpecForge.AI</span>
+
+### [Spec-Driven Development needs seven layers of control](specforge-ai/seven-layers-of-spec-driven-development.md)
+
+Published May 11, 2026 · SDD · Delivery control
+</article>
+
+<article class="article-card" markdown>
+<span class="article-card__tag">SpecForge.AI</span>
+
+### [AI-assisted development has a governance problem](specforge-ai/governed-ai-assisted-development.md)
+
+Published May 11, 2026 · SDD · AI governance
+</article>
+
+</div>
 
 ## Sphere Integration Hub Saga
 
