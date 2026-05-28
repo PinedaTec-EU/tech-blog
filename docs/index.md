@@ -54,6 +54,23 @@ Deterministic API workflows, execution traces, CI/CD automation, and reproducibl
 <div class="insight-list" markdown>
 
 <article class="insight-card" markdown>
+<a class="insight-card__media" href="sphere-integration-hub/postman-collections-rot-when-api-teams-scale/" markdown>
+![Postman collections rot when API teams scale](assets/images/sphere-integration-hub/postman-collections-rot-header.png)
+</a>
+
+<div class="insight-card__body" markdown>
+<span class="article-card__tag">Sphere Integration Hub</span>
+<span class="insight-card__meta">Published May 28, 2026 · API workflows · Contract validation</span>
+
+### [Postman Collections Rot When API Teams Scale](sphere-integration-hub/postman-collections-rot-when-api-teams-scale.md)
+
+Why large API collections become stale, and how repository-owned workflows move contract validation, execution evidence, and auditability into the pull request.
+
+[Read article :octicons-arrow-right-24:](sphere-integration-hub/postman-collections-rot-when-api-teams-scale.md){ .insight-card__link }
+</div>
+</article>
+
+<article class="insight-card" markdown>
 <a class="insight-card__media" href="sphere-integration-hub/simulate-concurrent-users-and-catch-latency-spikes/" markdown>
 ![Parallel execution with one visible latency spike](assets/images/sphere-integration-hub/concurrent-user-latency-probe-timeline.png)
 </a>

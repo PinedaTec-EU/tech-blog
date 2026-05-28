@@ -48,6 +48,11 @@ The blog voice is practical, direct, and technical. It starts from a real engine
   - `published`: the canonical publication date in `YYYY-MM-DD`
   - `updated`: optional last meaningful update date in `YYYY-MM-DD`
 - Every article should have a conceptual header image that adds meaning to the article. Put it near the top of the article, after the compatibility marker when present and before the first major section.
+- The front matter `image` field is the article `og:image`. It must point to the top/header image, not to an internal diagram or screenshot.
+- The top/header image must use the same visual direction as the LinkedIn article banner images: wide social-card composition, clear title or article claim, strong series branding, and enough safe space for link-preview cropping.
+- Prefer `png` or `jpg` for `og:image` compatibility with LinkedIn and other social previews. Keep SVG sources when useful, but do not point `image` to SVG unless there is a specific reason.
+- Create or provide the header image as its own asset. Do not satisfy the header requirement by thumbnailing, rasterizing, or reusing an internal diagram that was designed for the article body.
+- Internal diagrams, workflow sketches, report screenshots, and technical SVGs can appear later in the article body, but they should not be used as `og:image` unless they were intentionally designed as a social banner.
 - Prefer a specific image per article over the generic series image. Use the generic series image only as a temporary fallback.
 - For Sphere Integration Hub articles, keep article images in `docs/assets/images/sphere-integration-hub/` and use a stable slug filename, for example `article-slug.png`.
 - Keep social preview images in `docs/assets/images/<series>/` so MkDocs publishes them as stable absolute URLs.

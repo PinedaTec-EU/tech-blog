@@ -46,6 +46,7 @@ nav:
       - Spec-Driven Development needs seven layers of control: specforge-ai/seven-layers-of-spec-driven-development.md
       - AI-assisted development has a governance problem: specforge-ai/governed-ai-assisted-development.md
   - Sphere Integration Hub:
+      - Postman Collections Rot When API Teams Scale: sphere-integration-hub/postman-collections-rot-when-api-teams-scale.md
       - Simulate Concurrent Users and Catch Latency Spikes with a Deterministic Workflow: sphere-integration-hub/simulate-concurrent-users-and-catch-latency-spikes.md
       - Switching Issues Should Not Mean Rebuilding Test Context: sphere-integration-hub/switching-issues-should-not-mean-rebuilding-test-context.md
       - Deterministic API Workflow Engine: sphere-integration-hub/deterministic-api-workflow-engine.md
