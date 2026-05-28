@@ -16,8 +16,8 @@ hide:
 Field notes from two open repositories: Sphere Integration Hub for deterministic API workflows, and SpecForge.AI for governed spec-driven development.
 
 <nav class="hero-links" markdown>
-[Start with SIH :octicons-arrow-right-24:](sphere-integration-hub/3-am-production-debugging-nightmare.md)
-[Start with SpecForge.AI :octicons-arrow-right-24:](specforge-ai/governed-ai-assisted-development.md)
+[Start with SIH :octicons-arrow-right-24:](sphere-integration-hub/index.md)
+[Start with SpecForge.AI :octicons-arrow-right-24:](specforge-ai/index.md)
 [Browse series :octicons-beaker-24:](#series)
 </nav>
 
@@ -61,6 +61,7 @@ Start here when the pain is multi-API testing, production debugging, contract va
 
 - [Switching Issues Should Not Mean Rebuilding Test Context](sphere-integration-hub/switching-issues-should-not-mean-rebuilding-test-context.md) if your pain is daily issue setup chaos across APIs, SQL, and manual steps.
 - [The 3 AM Production Debugging Nightmare](sphere-integration-hub/3-am-production-debugging-nightmare.md) if your pain is production debugging across multiple APIs.
+- [Sphere Integration Hub](sphere-integration-hub/index.md) if you want the product overview before choosing an article.
 - [SphereIntegrationHub: A Deterministic API Workflow Engine](sphere-integration-hub/deterministic-api-workflow-engine.md) if you want the product and architecture overview first.
 - [GitHub repository :octicons-mark-github-24:](https://github.com/PinedaTec-EU/SphereIntegrationHub){ target="_blank" rel="noopener" } if you want installation, samples, and source code.
 - [npm package](https://www.npmjs.com/package/@pinedatec.eu/sphere-integration-hub){ target="_blank" rel="noopener" } and [NuGet package](https://www.nuget.org/packages/SphereIntegrationHub.Tool){ target="_blank" rel="noopener" } if you want to try the CLI directly.
@@ -75,6 +76,7 @@ Start here when the pain is AI-assisted delivery without durable specs, review e
 
 - [AI-assisted development has a governance problem](specforge-ai/governed-ai-assisted-development.md) if your pain is agent speed without enough traceability.
 - [Spec-Driven Development needs seven layers of control](specforge-ai/seven-layers-of-spec-driven-development.md) if you want the operating model behind governed SDD.
+- [SpecForge.AI](specforge-ai/index.md) if you want the product overview before choosing an article.
 - [SpecForge.AI repository :octicons-mark-github-24:](https://github.com/PinedaTec-EU/SpecForge.AI){ target="_blank" rel="noopener" } if you want the public source repository.
 </section>
 
@@ -313,7 +315,7 @@ AI coding agents are fast, but teams still need specifications, traceability, re
 
 Deterministic API workflows, execution traces, CI/CD, and reproducible automation.
 
-[View series](sphere-integration-hub/deterministic-api-workflow-engine.md)
+[View series](sphere-integration-hub/index.md)
 </section>
 
 <section class="series-card" markdown>
@@ -323,7 +325,7 @@ Deterministic API workflows, execution traces, CI/CD, and reproducible automatio
 
 Specifications, assisted design, MCP-backed workflows, governance, traceability, and AI-assisted delivery under operational control.
 
-[View series](specforge-ai/seven-layers-of-spec-driven-development.md)
+[View series](specforge-ai/index.md)
 </section>
 
 <section class="series-card" markdown>
