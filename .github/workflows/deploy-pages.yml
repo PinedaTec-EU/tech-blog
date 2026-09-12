@@ -22,6 +22,9 @@ jobs:
     runs-on: [self-hosted, pinedatec, Linux, X64]
 
     steps:
+      - name: Create isolated runner job directory
+        id: job-directory
+        uses: PinedaTec-EU/pinedatec-ci/.github/actions/create-runner-job-directory@main
       - name: Checkout
         uses: actions/checkout@v4
 
@@ -44,6 +47,13 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: site
+
+      - name: Clean job artifacts and workspace
+        if: ${{ always() && steps.job-directory.outputs.job_directory != '' }}
+        uses: PinedaTec-EU/pinedatec-ci/.github/actions/cleanup-runner-job-directory@main
+        with:
+          job_directory: ${{ steps.job-directory.outputs.job_directory }}
+          clean_workspace: "true"
 
   deploy:
     name: Deploy site
