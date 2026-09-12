@@ -19,7 +19,7 @@ concurrency:
 jobs:
   build:
     name: Build site
-    runs-on: [self-hosted, primary, Linux, X64]
+    runs-on: [self-hosted, pinedatec, Linux, X64]
 
     steps:
       - name: Checkout
@@ -49,7 +49,7 @@ jobs:
     name: Deploy site
     if: github.event_name != 'pull_request'
     needs: build
-    runs-on: [self-hosted, primary, Linux, X64]
+    runs-on: [self-hosted, pinedatec, Linux, X64]
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
