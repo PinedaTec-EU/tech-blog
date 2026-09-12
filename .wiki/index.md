@@ -8,7 +8,10 @@ Tracking: [#4](https://github.com/PinedaTec-EU/tech-blog/issues/4).
 
 ## Job artifact cleanup
 
-Direct artifact-producing jobs register shared owned temporary storage before
-setup and run final `always()` cleanup after publishing or consuming outputs.
+The Pages build runs direct final `always()` workspace cleanup after uploading
+its artifact. This public repository cannot consume the private shared CI actions.
+The deploy job consumes the uploaded artifact independently.
 SDK/download caches remain outside the disposable workspace.
 Tracking: [#6](https://github.com/PinedaTec-EU/tech-blog/issues/6).
+
+Public/private action compatibility: [#8](https://github.com/PinedaTec-EU/tech-blog/issues/8).

@@ -22,9 +22,6 @@ jobs:
     runs-on: [self-hosted, pinedatec, Linux, X64]
 
     steps:
-      - name: Create isolated runner job directory
-        id: job-directory
-        uses: PinedaTec-EU/pinedatec-ci/.github/actions/create-runner-job-directory@main
       - name: Checkout
         uses: actions/checkout@v4
 
@@ -49,11 +46,16 @@ jobs:
           path: site
 
       - name: Clean job artifacts and workspace
-        if: ${{ always() && steps.job-directory.outputs.job_directory != '' }}
-        uses: PinedaTec-EU/pinedatec-ci/.github/actions/cleanup-runner-job-directory@main
-        with:
-          job_directory: ${{ steps.job-directory.outputs.job_directory }}
-          clean_workspace: "true"
+        if: ${{ always() }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          # Public repositories cannot consume the private shared CI actions.
+          # The uploaded Pages artifact is independent of this workspace.
+          if git rev-parse --is-inside-work-tree >/dev/null 2>&1; then
+            git reset --hard
+            git clean -ffdx
+          fi
 
   deploy:
     name: Deploy site
