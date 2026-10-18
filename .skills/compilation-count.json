@@ -1,0 +1,6 @@
+{
+  "schema_version": 1,
+  "mode": "none",
+  "commands": [],
+  "notes": "No compiler-bearing product command in the current source contract. Preserve existing publication/deployment versioning; do not count Terraform validation, policy checks or documentation checks as compilations."
+}
