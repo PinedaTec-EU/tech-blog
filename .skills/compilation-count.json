@@ -1,0 +1,6 @@
+{
+  "schema_version": 1,
+  "mode": "none",
+  "commands": [],
+  "notes": "MkDocs renders documentation for the existing GitHub Pages publication flow. This is not an approved compiler-bearing command; do not invent compilation counts or runtime versions for documentation rendering."
+}

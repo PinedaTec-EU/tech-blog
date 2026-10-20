@@ -15,3 +15,9 @@ SDK/download caches remain outside the disposable workspace.
 Tracking: [#6](https://github.com/PinedaTec-EU/tech-blog/issues/6).
 
 Public/private action compatibility: [#8](https://github.com/PinedaTec-EU/tech-blog/issues/8).
+
+## Shared agent routing
+
+Use [the generated skill index](../.skills/index.md) for authored PR summaries
+and strict judge validation. Compilation mode is `none`; existing
+version/publication workflows are preserved. Tracking: [#13](https://github.com/PinedaTec-EU/tech-blog/issues/13).
